@@ -181,6 +181,7 @@ GEM
       omniauth-oauth (~> 1.1)
       rack
     orm_adapter (0.5.0)
+    pg (1.3.3)
     public_suffix (4.0.6)
     puma (5.6.2)
       nio4r (~> 2.0)
@@ -236,7 +237,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    sqlite3 (1.4.2)
     strscan (3.0.1)
     tailwindcss-rails (2.0.7-x86_64-linux)
       railties (>= 6.0.0)
@@ -290,11 +290,11 @@ DEPENDENCIES
   omniauth-linkedin-oauth2
   omniauth-rails_csrf_protection (~> 1.0)
   omniauth-twitter
+  pg
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 7.0.0)
   selenium-webdriver
-  sqlite3 (~> 1.4)
   tailwindcss-rails (~> 2.0)
   turbolinks (~> 5)
   tzinfo-data
