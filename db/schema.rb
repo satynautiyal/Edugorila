@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_02_20_121325) do
+ActiveRecord::Schema.define(version: 2022_02_20_121325) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -109,5 +109,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_20_121325) do
   add_foreign_key "questions", "subjects"
   add_foreign_key "quizzes", "subjects"
   add_foreign_key "results", "quizzes"
-  add_foreign_key "results", "users"
 end
