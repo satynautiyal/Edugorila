@@ -1,4 +1,4 @@
-class CreateQuizzes < ActiveRecord::Migration[7.0]
+class CreateQuizzes < ActiveRecord::Migration[6.1]
   def change
     create_table :quizzes do |t|
       t.string :name

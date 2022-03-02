@@ -1,4 +1,4 @@
-class AddColumnToAdmin < ActiveRecord::Migration[7.0]
+class AddColumnToAdmin < ActiveRecord::Migration[6.1]
   def change
     add_column :admins, :phone_number, :string
     add_column :admins, :password_digest, :string
