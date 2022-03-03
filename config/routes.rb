@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :file_upload_questions
   resources :results
   resources :questions
+  get 'select_quiz_type', to: 'questions#select_quiz_type'
+  get 'quiz_questions',to: 'questions#quiz_questions'
   resources :quizzes
   resources :subjects
   post 'upload_question', to: 'questions#upload_question'

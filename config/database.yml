@@ -17,10 +17,10 @@ development:
 test:
   <<: *default
   database: hinquiz_db_test
-  username: postgres
-  password: postgres
-  host: localhost
-
+  # username: postgres
+  # password: postgres
+  # host: localhost
+  password: password
 production:
   <<: *default
   database: hinquiz_db
@@ -28,4 +28,5 @@ production:
 
 #  password: <%= ENV['EXAMPLE_DATABASE_PASSWORD'] %>
   #username: bablu_dev
+  username: postgres
   password: 'password'

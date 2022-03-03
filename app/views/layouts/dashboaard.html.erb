@@ -14,12 +14,10 @@
   </head>
 
   <body>
-  
-<div class="fixed top-0 left-0 w-1/2 h-full bg-white" aria-hidden="true"></div>
-<div class="fixed top-0 right-0 w-1/2 h-full bg-gray-50" aria-hidden="true"></div>
+<div style="z-index:100;background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.42), rgba(117, 19, 93, 0.63)),url(<%= image_url("homepage_background.jpeg") %>);background-size: 100vw 100vh;">
 <div class="relative min-h-full flex flex-col mt-0">
   <!-- Navbar -->
-  <nav class="flex-shrink-0 bg-indigo-600">
+  <nav class="flex-shrink-0 bg-white shadow-xl">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <!-- Logo section -->
@@ -50,7 +48,7 @@
             <div class="flex">
             <% Subject.all.each do |subject| %>
 
-              <a href="<%= questions_path(id:subject.id) %>" class="text-indigo-200 hover:text-indigo-100 hover:bg-indigo-600 block px-3 py-2 rounded-md text-base font-medium"><%= subject.name %></a>
+              <a href="<%= questions_path(id:subject.id) %>" class=" text-gray-700  hover:text-gray-900 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium"><%= subject.name %></a>
 
               <% end %>
 

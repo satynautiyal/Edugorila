@@ -17,9 +17,14 @@
   </div>
 <div class="my-5">
     <%= form.label :upload_file %>
-    <%= form.file_field :upload_file, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.file_field :upload_file,id: "question-file", class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
   <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= form.submit class: "submit-button rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer",type:"button" %>
   </div>
 <% end %>
+<script>
+  $("#question-file").on("change",function () {
+    $(".submit-button").attr("type","submit");
+  })
+</script>

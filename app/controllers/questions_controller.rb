@@ -3,15 +3,21 @@ class QuestionsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: %i{upload_question}
   # GET /questions or /questions.json
   def index
+    redirect_to select_quiz_type_path(id: params[:id])
+  end
+
+  def select_quiz_type()
+  end
+
+  def quiz_questions
     # abort('here')
     if params[:id].present?
-    @questions = Question.where(subject_id: params[:id]).paginate(:page => params[:page], :per_page => 5)
+      @questions = Question.where(subject_id: params[:id]).paginate(:page => params[:page], :per_page => 5)
     else
       @questions = Question.all.paginate(:page => params[:page], :per_page => 2)
     end
     render layout: 'dashboaard'
   end
-
   # GET /questions/1 or /questions/1.json
   def show
   end

@@ -2,6 +2,18 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  ENV['GOOGLE_OAUTH_CLIENT_ID'] = '978243226021-u5asf2a2ueffk0khbtband8512gu6nhj.apps.googleusercontent.com'
+  ENV['GOOGLE_OAUTH_CLIENT_SECRET'] = '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'
+
+  ENV['LINKEDIN_OAUTH_CLIENT_ID'] = '869rt2nb6hknnx'
+  ENV['LINKEDIN_OAUTH_CLIENT_SECRET'] = 'hfjVEeCFnZ96gyfF'
+
+  ENV['GITHUB_OAUTH_CLIENT_ID'] = 'b99c6e5dffad904b7cac'
+  ENV['GITHUB_OAUTH_CLIENT_SECRET'] = 'db16554a1de297b616ec854707e309c5b8565f55'
+
+
+  ENV['TWITTER_API_PUBLIC'] = 'IzPxeJstHDxeYhDAXESCRCj1z'
+  ENV['TWITTER_API_SECRET'] = 'CnvkX1EDHDS4HNB4ZuJNjSjySGfjlAtmlYJd6XprIPhyXfBZka'
 
   # Code is not reloaded between requests.
   config.cache_classes = false

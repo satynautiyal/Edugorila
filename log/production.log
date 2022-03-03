@@ -111,3 +111,42 @@ F, [2022-03-03T01:38:58.410037 #23892] FATAL -- : [6a2295da-b7e2-47b2-b6bc-1bbd1
 [6a2295da-b7e2-47b2-b6bc-1bbd130babde] puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
 [6a2295da-b7e2-47b2-b6bc-1bbd130babde] puma (5.6.2) lib/puma/server.rb:441:in `process_client'
 [6a2295da-b7e2-47b2-b6bc-1bbd130babde] puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+I, [2022-03-03T22:14:12.279117 #5077]  INFO -- : [b67285a2-99a6-452a-847d-a40c8cb09441] Started GET "/" for 127.0.0.1 at 2022-03-03 22:14:12 +0530
+I, [2022-03-03T22:14:12.409701 #5077]  INFO -- : [b67285a2-99a6-452a-847d-a40c8cb09441] Processing by DashboardsController#show as HTML
+I, [2022-03-03T22:14:12.410274 #5077]  INFO -- : [b67285a2-99a6-452a-847d-a40c8cb09441] Completed 401 Unauthorized in 0ms (Allocations: 244)
+I, [2022-03-03T22:14:13.951960 #5077]  INFO -- : [10f0c1d5-c88e-471d-956c-c81353461d84] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-03 22:14:13 +0530
+I, [2022-03-03T22:14:13.956259 #5077]  INFO -- : [10f0c1d5-c88e-471d-956c-c81353461d84] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-03T22:14:20.328159 #5077]  INFO -- : [10f0c1d5-c88e-471d-956c-c81353461d84]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 31.8ms | Allocations: 1459)
+I, [2022-03-03T22:14:20.378415 #5077]  INFO -- : [10f0c1d5-c88e-471d-956c-c81353461d84]   Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 2102)
+I, [2022-03-03T22:14:20.378982 #5077]  INFO -- : [10f0c1d5-c88e-471d-956c-c81353461d84] Completed 200 OK in 6423ms (Views: 116.7ms | ActiveRecord: 5646.8ms | Allocations: 13046)
+I, [2022-03-03T22:14:20.938606 #5077]  INFO -- : [f4df184d-8bb0-4c1b-b371-c8c7a4da52c2] Started GET "/assets/tailwind-8ee694a14f93a37834df15dcee0552adb3e2c28587febeecf58e28cd32b323a8.css" for 127.0.0.1 at 2022-03-03 22:14:20 +0530
+I, [2022-03-03T22:14:20.941836 #5077]  INFO -- : [b63ce08e-1776-4966-adb6-0eb261997b14] Started GET "/assets/inter-font-8c3e82affb176f4bca9616b838d906343d1251adc8408efe02cf2b1e4fcf2bc4.css" for 127.0.0.1 at 2022-03-03 22:14:20 +0530
+I, [2022-03-03T22:14:20.942410 #5077]  INFO -- : [73d895f9-a656-44ea-a4b4-029bf8addd25] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-03 22:14:20 +0530
+I, [2022-03-03T22:14:24.941508 #5077]  INFO -- : [65d36ad3-f1d9-4c08-9994-d49cc4aef400] Started GET "/favicon.ico" for 127.0.0.1 at 2022-03-03 22:14:24 +0530
+F, [2022-03-03T22:14:24.943446 #5077] FATAL -- : [65d36ad3-f1d9-4c08-9994-d49cc4aef400]   
+[65d36ad3-f1d9-4c08-9994-d49cc4aef400] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[65d36ad3-f1d9-4c08-9994-d49cc4aef400]   
+I, [2022-03-03T22:14:38.826272 #5077]  INFO -- : [c44e0771-dee1-480c-86d1-fe80b54d9c21] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-03 22:14:38 +0530
+I, [2022-03-03T22:14:38.829050 #5077]  INFO -- : [c44e0771-dee1-480c-86d1-fe80b54d9c21] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-03T22:14:38.833746 #5077]  INFO -- : [c44e0771-dee1-480c-86d1-fe80b54d9c21]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 725)
+I, [2022-03-03T22:14:38.834507 #5077]  INFO -- : [c44e0771-dee1-480c-86d1-fe80b54d9c21]   Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1031)
+I, [2022-03-03T22:14:38.834862 #5077]  INFO -- : [c44e0771-dee1-480c-86d1-fe80b54d9c21] Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1602)
+I, [2022-03-03T22:14:38.866240 #5077]  INFO -- : [970d8b94-980b-49da-ac91-fc1762c66680] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-03 22:14:38 +0530
+I, [2022-03-03T22:14:47.085961 #5482]  INFO -- : [c0e44e79-8973-4e2c-963e-d6644b247a66] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-03 22:14:47 +0530
+I, [2022-03-03T22:14:47.098439 #5482]  INFO -- : [c0e44e79-8973-4e2c-963e-d6644b247a66] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-03T22:14:47.148586 #5482]  INFO -- : [c0e44e79-8973-4e2c-963e-d6644b247a66]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1492)
+I, [2022-03-03T22:14:47.150161 #5482]  INFO -- : [c0e44e79-8973-4e2c-963e-d6644b247a66]   Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2160)
+I, [2022-03-03T22:14:47.150685 #5482]  INFO -- : [c0e44e79-8973-4e2c-963e-d6644b247a66] Completed 200 OK in 52ms (Views: 11.2ms | ActiveRecord: 17.2ms | Allocations: 13216)
+I, [2022-03-03T22:14:47.174364 #5482]  INFO -- : [a937aeb4-3762-4d8a-9b6a-8b93ad791253] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-03 22:14:47 +0530
+I, [2022-03-03T22:14:48.369451 #5482]  INFO -- : [8fb6b8c2-a475-4c38-8cb5-27041394397d] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-03 22:14:48 +0530
+I, [2022-03-03T22:14:48.375799 #5482]  INFO -- : [8fb6b8c2-a475-4c38-8cb5-27041394397d] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-03T22:14:48.380446 #5482]  INFO -- : [8fb6b8c2-a475-4c38-8cb5-27041394397d]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 696)
+I, [2022-03-03T22:14:48.381546 #5482]  INFO -- : [8fb6b8c2-a475-4c38-8cb5-27041394397d]   Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 997)
+I, [2022-03-03T22:14:48.381935 #5482]  INFO -- : [8fb6b8c2-a475-4c38-8cb5-27041394397d] Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1572)
+I, [2022-03-03T22:14:48.403846 #5482]  INFO -- : [765d6664-d31f-4fc4-a3d2-fdb2a591911a] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-03 22:14:48 +0530
+I, [2022-03-03T22:14:49.177151 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72b3fe91] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-03 22:14:49 +0530
+I, [2022-03-03T22:14:49.183243 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72b3fe91] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-03T22:14:49.186381 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72b3fe91]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 696)
+I, [2022-03-03T22:14:49.187082 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72b3fe91]   Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 997)
+I, [2022-03-03T22:14:49.187393 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72b3fe91] Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1512)
+I, [2022-03-03T22:14:49.210072 #5482]  INFO -- : [4be2d3d4-910e-4ee7-a5af-489e73fdc57f] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-03 22:14:49 +0530
