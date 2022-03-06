@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   end
 
 
-  
+  post 'test_result',to: 'questions#test_result'
   post 'upload_question',to: 'questions#upload_question'
   post '/profiles/:id', to: 'profiles#update'
   resources :profiles

@@ -6,20 +6,47 @@ class QuestionsController < ApplicationController
     redirect_to select_quiz_type_path(id: params[:id])
   end
 
-  def select_quiz_type()
+  def select_quiz_type
+    render layout: 'dashboaard'
   end
 
   def quiz_questions
     # abort('here')
     if params[:id].present?
-      @questions = Question.where(subject_id: params[:id]).paginate(:page => params[:page], :per_page => 5)
+      @questions = Question.where(subject_id: params[:id])
     else
-      @questions = Question.all.paginate(:page => params[:page], :per_page => 2)
+      @questions = Question.all
     end
-    render layout: 'dashboaard'
+    unless session['previous_page'].nil?
+      redirect_to session['previous_page']
+      session['previous_page']=nil
+    else
+      @duration=@questions.first.subject.duration
+      render layout: 'dashboaard'
+    end
   end
   # GET /questions/1 or /questions/1.json
   def show
+  end
+
+  def test_result
+    @questions=Question.where(subject_id: params[:subject_id])
+    @score=0
+    @result=Array.new   
+    @questions.each_with_index  do |question,index|            
+    
+        if  question.correct_answer == params["submitted-answer#{question.id}"]
+            @result << ["Q#{index+1}","Correct"]
+            @score = @score+1
+        else
+            @result<<["Q#{index+1}","Incorrect","Correct answer was #{question.correct_answer}"]
+        end
+    end
+    if admin_signed_in?
+      Result.create(marks: @score, admin_id: current_admin.id,subject_id: params[:subject_id])
+    end
+    session['previous_page']="#{root_path}"
+    render layout: 'dashboaard'
   end
 
   # GET /questions/new

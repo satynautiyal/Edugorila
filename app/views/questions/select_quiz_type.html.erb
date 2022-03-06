@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 gap-14 mx-auto">  
+<div class="grid grid-cols-2 mt-14 gap-14 mx-auto">  
     <div class="col-span">
         <div class="max-w-sm hover:scale-110 rounded overflow-hidden shadow-xl" onclick="selectQuizType('Marathon')">
         <img class="w-full" src="<%= image_url('marathon_quiz.gif')%>" alt="Marathon Quiz">
@@ -72,7 +72,8 @@
       </div>
       <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
         <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm" onclick="closeQuiz()">No</button>
-        <%= link_to "Yes",quiz_questions_path(id: params[:id]),class:"w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"%>
+        <%= link_to "Yes",quiz_questions_path(id: params[:id],type: "marathon"),id:"marathon",style:"color:white",class:"hidden w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"%>
+        <%= link_to "Yes",quiz_questions_path(id: params[:id],type: "time"),id: "time",style:"color:white",class:"hidden w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"%>      
       </div>
     </div>
   </div>
@@ -83,6 +84,16 @@
     function selectQuizType(quizName){
         $("#quiz-name").html(quizName+" Quiz");
         $(".alert-select-quiz").toggle();
+        if(quizName == "Marathon")
+        {
+          $("#marathon").css("display","block");
+          $("#time").css("display","none");
+        }
+        else
+        {
+          $("#time").css("display","block");
+          $("#marathon").css("display","none");
+        }
     }
 
     function closeQuiz() {

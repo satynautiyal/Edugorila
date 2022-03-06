@@ -27,6 +27,6 @@ production:
   #username: rails
 
 #  password: <%= ENV['EXAMPLE_DATABASE_PASSWORD'] %>
-  #username: bablu_dev
-  username: postgres
+  # #username: bablu_dev
+  # username: postgres
   password: 'password'

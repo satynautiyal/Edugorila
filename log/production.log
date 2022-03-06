@@ -150,3 +150,306 @@ I, [2022-03-03T22:14:49.186381 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72
 I, [2022-03-03T22:14:49.187082 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72b3fe91]   Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 997)
 I, [2022-03-03T22:14:49.187393 #5482]  INFO -- : [60b30814-5d1c-47c1-8bff-3cbb72b3fe91] Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1512)
 I, [2022-03-03T22:14:49.210072 #5482]  INFO -- : [4be2d3d4-910e-4ee7-a5af-489e73fdc57f] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-03 22:14:49 +0530
+I, [2022-03-04T01:38:32.061563 #31482]  INFO -- : [4ab7fa9c-5032-4b6e-bfff-44e6fb947bc3] Started GET "/" for 127.0.0.1 at 2022-03-04 01:38:32 +0530
+I, [2022-03-04T01:38:32.073842 #31482]  INFO -- : [4ab7fa9c-5032-4b6e-bfff-44e6fb947bc3] Processing by DashboardsController#show as HTML
+I, [2022-03-04T01:38:32.074595 #31482]  INFO -- : [4ab7fa9c-5032-4b6e-bfff-44e6fb947bc3] Completed 401 Unauthorized in 1ms (Allocations: 244)
+I, [2022-03-04T01:38:32.084474 #31482]  INFO -- : [cc433d5d-cc66-400c-9200-e3076e213dbb] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-04 01:38:32 +0530
+I, [2022-03-04T01:38:32.091190 #31482]  INFO -- : [cc433d5d-cc66-400c-9200-e3076e213dbb] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-04T01:38:32.097194 #31482]  INFO -- : [cc433d5d-cc66-400c-9200-e3076e213dbb] Completed 500 Internal Server Error in 6ms (Allocations: 1135)
+F, [2022-03-04T01:38:32.099608 #31482] FATAL -- : [cc433d5d-cc66-400c-9200-e3076e213dbb]   
+[cc433d5d-cc66-400c-9200-e3076e213dbb] ActiveRecord::ConnectionNotEstablished (FATAL:  Peer authentication failed for user "postgres"
+):
+[cc433d5d-cc66-400c-9200-e3076e213dbb]   
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/connection_handling.rb:283:in `connection'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/model_schema.rb:553:in `load_schema!'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/attributes.rb:250:in `load_schema!'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/model_schema.rb:539:in `block in load_schema'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/model_schema.rb:536:in `synchronize'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/model_schema.rb:536:in `load_schema'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/model_schema.rb:402:in `attribute_types'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/attribute_methods.rb:187:in `_has_attribute?'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/inheritance.rb:57:in `new'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] devise (4.8.1) app/controllers/devise/sessions_controller.rb:11:in `new'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/abstract_controller/base.rb:228:in `process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actiontext (6.1.4.6) lib/action_text/rendering.rb:20:in `with_renderer'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actiontext (6.1.4.6) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/callbacks.rb:126:in `instance_exec'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/callbacks.rb:137:in `run_callbacks'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/notifications.rb:203:in `block in instrument'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/notifications.rb:203:in `instrument'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activerecord (6.1.4.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/abstract_controller/base.rb:165:in `process'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionview (6.1.4.6) lib/action_view/rendering.rb:39:in `process'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal.rb:190:in `dispatch'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_controller/metal.rb:254:in `dispatch'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/journey/router.rb:32:in `each'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] warden (1.2.9) lib/warden/manager.rb:34:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/etag.rb:27:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/head.rb:12:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] railties (6.1.4.6) lib/rails/rack/logger.rb:37:in `call_app'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] railties (6.1.4.6) lib/rails/rack/logger.rb:26:in `block in call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] railties (6.1.4.6) lib/rails/rack/logger.rb:26:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] activesupport (6.1.4.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] actionpack (6.1.4.6) lib/action_dispatch/middleware/host_authorization.rb:113:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:249:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] railties (6.1.4.6) lib/rails/engine.rb:539:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+[cc433d5d-cc66-400c-9200-e3076e213dbb] puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+I, [2022-03-04T01:38:33.121066 #31482]  INFO -- : [9da66cfd-f95c-415d-80b4-4597bce5230e] Started GET "/favicon.ico" for 127.0.0.1 at 2022-03-04 01:38:33 +0530
+F, [2022-03-04T01:38:33.126426 #31482] FATAL -- : [9da66cfd-f95c-415d-80b4-4597bce5230e]   
+[9da66cfd-f95c-415d-80b4-4597bce5230e] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[9da66cfd-f95c-415d-80b4-4597bce5230e]   
+I, [2022-03-04T01:38:55.972419 #31482]  INFO -- : [29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-04 01:38:55 +0530
+I, [2022-03-04T01:38:55.978833 #31482]  INFO -- : [29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-04T01:38:55.982372 #31482]  INFO -- : [29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] Completed 500 Internal Server Error in 3ms (Allocations: 629)
+F, [2022-03-04T01:38:55.983954 #31482] FATAL -- : [29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c]   
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] ActiveRecord::ConnectionNotEstablished (FATAL:  Peer authentication failed for user "postgres"
+):
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c]   
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/connection_handling.rb:283:in `connection'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/model_schema.rb:553:in `load_schema!'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/attributes.rb:250:in `load_schema!'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/model_schema.rb:539:in `block in load_schema'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/model_schema.rb:536:in `synchronize'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/model_schema.rb:536:in `load_schema'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/model_schema.rb:402:in `attribute_types'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/attribute_methods.rb:187:in `_has_attribute?'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/inheritance.rb:57:in `new'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] devise (4.8.1) app/controllers/devise/sessions_controller.rb:11:in `new'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/abstract_controller/base.rb:228:in `process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actiontext (6.1.4.6) lib/action_text/rendering.rb:20:in `with_renderer'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actiontext (6.1.4.6) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/callbacks.rb:126:in `instance_exec'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/callbacks.rb:137:in `run_callbacks'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/notifications.rb:203:in `block in instrument'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/notifications.rb:203:in `instrument'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activerecord (6.1.4.6) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/abstract_controller/base.rb:165:in `process'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionview (6.1.4.6) lib/action_view/rendering.rb:39:in `process'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal.rb:190:in `dispatch'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_controller/metal.rb:254:in `dispatch'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/journey/router.rb:32:in `each'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:202:in `call!'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] omniauth (2.0.4) lib/omniauth/strategy.rb:169:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] warden (1.2.9) lib/warden/manager.rb:34:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/etag.rb:27:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/head.rb:12:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] railties (6.1.4.6) lib/rails/rack/logger.rb:37:in `call_app'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] railties (6.1.4.6) lib/rails/rack/logger.rb:26:in `block in call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] railties (6.1.4.6) lib/rails/rack/logger.rb:26:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] activesupport (6.1.4.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] actionpack (6.1.4.6) lib/action_dispatch/middleware/host_authorization.rb:113:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:249:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] railties (6.1.4.6) lib/rails/engine.rb:539:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+[29a0d61e-0d2e-4f24-b4f8-3114fe0c8e5c] puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+I, [2022-03-04T01:39:03.600423 #31602]  INFO -- : [c5bca7bd-046b-4749-9587-af726e13b0dc] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-04 01:39:03 +0530
+I, [2022-03-04T01:39:03.613891 #31602]  INFO -- : [c5bca7bd-046b-4749-9587-af726e13b0dc] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-04T01:39:03.664736 #31602]  INFO -- : [c5bca7bd-046b-4749-9587-af726e13b0dc]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1505)
+I, [2022-03-04T01:39:03.667235 #31602]  INFO -- : [c5bca7bd-046b-4749-9587-af726e13b0dc]   Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2173)
+I, [2022-03-04T01:39:03.668042 #31602]  INFO -- : [c5bca7bd-046b-4749-9587-af726e13b0dc] Completed 200 OK in 54ms (Views: 10.8ms | ActiveRecord: 15.6ms | Allocations: 13228)
+I, [2022-03-04T01:39:03.701232 #31602]  INFO -- : [afba0358-d03d-4450-8ceb-87999f6689a8] Started GET "/assets/tailwind-8ee694a14f93a37834df15dcee0552adb3e2c28587febeecf58e28cd32b323a8.css" for 127.0.0.1 at 2022-03-04 01:39:03 +0530
+I, [2022-03-04T01:39:03.704442 #31602]  INFO -- : [86d82108-6efe-4368-a8db-bda4fc16843a] Started GET "/assets/inter-font-8c3e82affb176f4bca9616b838d906343d1251adc8408efe02cf2b1e4fcf2bc4.css" for 127.0.0.1 at 2022-03-04 01:39:03 +0530
+I, [2022-03-04T01:39:03.719810 #31602]  INFO -- : [3a5199a0-2cb1-4ad4-9a4b-00486bb50e5a] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-04 01:39:03 +0530
+F, [2022-03-04T01:39:04.023610 #31602] FATAL -- : [afba0358-d03d-4450-8ceb-87999f6689a8]   
+[afba0358-d03d-4450-8ceb-87999f6689a8] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8ee694a14f93a37834df15dcee0552adb3e2c28587febeecf58e28cd32b323a8.css"):
+[afba0358-d03d-4450-8ceb-87999f6689a8]   
+F, [2022-03-04T01:39:04.254923 #31602] FATAL -- : [3a5199a0-2cb1-4ad4-9a4b-00486bb50e5a]   
+[3a5199a0-2cb1-4ad4-9a4b-00486bb50e5a] ActionController::RoutingError (No route matches [GET] "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css"):
+[3a5199a0-2cb1-4ad4-9a4b-00486bb50e5a]   
+I, [2022-03-04T01:39:07.345280 #31602]  INFO -- : [22cbacc1-8d41-48b5-9d6a-674ef70c7206] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-04 01:39:07 +0530
+I, [2022-03-04T01:39:07.351778 #31602]  INFO -- : [22cbacc1-8d41-48b5-9d6a-674ef70c7206] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-04T01:39:07.356101 #31602]  INFO -- : [22cbacc1-8d41-48b5-9d6a-674ef70c7206]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 718)
+I, [2022-03-04T01:39:07.357003 #31602]  INFO -- : [22cbacc1-8d41-48b5-9d6a-674ef70c7206]   Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1035)
+I, [2022-03-04T01:39:07.357400 #31602]  INFO -- : [22cbacc1-8d41-48b5-9d6a-674ef70c7206] Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1622)
+I, [2022-03-04T01:39:07.385218 #31602]  INFO -- : [6b19c482-ed5f-4973-af95-ba25ac2fcfa9] Started GET "/assets/tailwind-8ee694a14f93a37834df15dcee0552adb3e2c28587febeecf58e28cd32b323a8.css" for 127.0.0.1 at 2022-03-04 01:39:07 +0530
+I, [2022-03-04T01:39:07.391941 #31602]  INFO -- : [eea02a60-6931-45b3-aa1a-5a0e26e4b1c3] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-04 01:39:07 +0530
+F, [2022-03-04T01:39:07.398984 #31602] FATAL -- : [6b19c482-ed5f-4973-af95-ba25ac2fcfa9]   
+[6b19c482-ed5f-4973-af95-ba25ac2fcfa9] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8ee694a14f93a37834df15dcee0552adb3e2c28587febeecf58e28cd32b323a8.css"):
+[6b19c482-ed5f-4973-af95-ba25ac2fcfa9]   
+F, [2022-03-04T01:39:07.489522 #31602] FATAL -- : [eea02a60-6931-45b3-aa1a-5a0e26e4b1c3]   
+[eea02a60-6931-45b3-aa1a-5a0e26e4b1c3] ActionController::RoutingError (No route matches [GET] "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css"):
+[eea02a60-6931-45b3-aa1a-5a0e26e4b1c3]   
+I, [2022-03-04T01:39:22.226633 #31602]  INFO -- : [daec7e4e-331b-492b-844e-82dc2835c6bf] Started GET "/assets/tailwind-8ee694a14f93a37834df15dcee0552adb3e2c28587febeecf58e28cd32b323a8.css" for 127.0.0.1 at 2022-03-04 01:39:22 +0530
+I, [2022-03-04T01:39:22.230348 #31602]  INFO -- : [901133c2-ba02-4346-8868-f819448e35e3] Started GET "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css" for 127.0.0.1 at 2022-03-04 01:39:22 +0530
+F, [2022-03-04T01:39:22.240356 #31602] FATAL -- : [daec7e4e-331b-492b-844e-82dc2835c6bf]   
+[daec7e4e-331b-492b-844e-82dc2835c6bf] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8ee694a14f93a37834df15dcee0552adb3e2c28587febeecf58e28cd32b323a8.css"):
+[daec7e4e-331b-492b-844e-82dc2835c6bf]   
+F, [2022-03-04T01:39:22.354670 #31602] FATAL -- : [901133c2-ba02-4346-8868-f819448e35e3]   
+[901133c2-ba02-4346-8868-f819448e35e3] ActionController::RoutingError (No route matches [GET] "/assets/application-4cc00b126f2cba6dd0e999de62f31d1c9bfaae03a347a808f533aaff064bac2e.css"):
+[901133c2-ba02-4346-8868-f819448e35e3]   
+I, [2022-03-04T01:41:30.039561 #32012]  INFO -- : [d51727eb-3bed-4622-862a-ae20e84e99ba] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-04 01:41:30 +0530
+I, [2022-03-04T01:41:30.056141 #32012]  INFO -- : [d51727eb-3bed-4622-862a-ae20e84e99ba] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-04T01:41:30.115452 #32012]  INFO -- : [d51727eb-3bed-4622-862a-ae20e84e99ba]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1492)
+I, [2022-03-04T01:41:30.117347 #32012]  INFO -- : [d51727eb-3bed-4622-862a-ae20e84e99ba]   Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2160)
+I, [2022-03-04T01:41:30.117803 #32012]  INFO -- : [d51727eb-3bed-4622-862a-ae20e84e99ba] Completed 200 OK in 61ms (Views: 13.6ms | ActiveRecord: 18.9ms | Allocations: 13215)
+I, [2022-03-04T01:41:30.149144 #32012]  INFO -- : [1ac72073-6d50-43fb-9f90-4fe484d356b6] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-04 01:41:30 +0530
+I, [2022-03-04T01:41:30.156530 #32012]  INFO -- : [ec6673bd-2239-41d4-8e3c-7915a9b51412] Started GET "/assets/application-a4375311ee992e8080e06c9388b14b73cab4c22f400505f345c34b53ed5e7fd2.css" for 127.0.0.1 at 2022-03-04 01:41:30 +0530
+I, [2022-03-04T01:41:37.194898 #32012]  INFO -- : [9c1b5b10-12e5-4883-8cd2-a5484e1d9f40] Started POST "/register" for 127.0.0.1 at 2022-03-04 01:41:37 +0530
+I, [2022-03-04T01:41:37.218612 #32012]  INFO -- : [9c1b5b10-12e5-4883-8cd2-a5484e1d9f40] Processing by Admins::SessionsController#register as HTML
+I, [2022-03-04T01:41:37.218856 #32012]  INFO -- : [9c1b5b10-12e5-4883-8cd2-a5484e1d9f40]   Parameters: {"authenticity_token"=>"[FILTERED]"}
+I, [2022-03-04T01:41:37.224723 #32012]  INFO -- : [9c1b5b10-12e5-4883-8cd2-a5484e1d9f40]   Rendered admins/sessions/register.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1104)
+I, [2022-03-04T01:41:37.225499 #32012]  INFO -- : [9c1b5b10-12e5-4883-8cd2-a5484e1d9f40]   Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1435)
+I, [2022-03-04T01:41:37.225855 #32012]  INFO -- : [9c1b5b10-12e5-4883-8cd2-a5484e1d9f40] Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2049)
+I, [2022-03-04T01:42:04.224053 #32012]  INFO -- : [6fa43f0b-1944-4add-9521-4a8576e588af] Started POST "/sign_up_with_credentials" for 127.0.0.1 at 2022-03-04 01:42:04 +0530
+I, [2022-03-04T01:42:04.230438 #32012]  INFO -- : [6fa43f0b-1944-4add-9521-4a8576e588af] Processing by Admins::SessionsController#sign_up_with_credentials as HTML
+I, [2022-03-04T01:42:04.230579 #32012]  INFO -- : [6fa43f0b-1944-4add-9521-4a8576e588af]   Parameters: {"full_name"=>"student@gmail.com", "email"=>"student@gmail.com", "phone_number"=>"123456789", "password"=>"[FILTERED]"}
+I, [2022-03-04T01:42:04.628146 #32012]  INFO -- : [3f637ff5-0f15-49b3-a27b-a6041a5beca1] Started POST "/sign_up_with_credentials" for 127.0.0.1 at 2022-03-04 01:42:04 +0530
+I, [2022-03-04T01:42:04.633380 #32012]  INFO -- : [3f637ff5-0f15-49b3-a27b-a6041a5beca1] Processing by Admins::SessionsController#sign_up_with_credentials as HTML
+I, [2022-03-04T01:42:04.633506 #32012]  INFO -- : [3f637ff5-0f15-49b3-a27b-a6041a5beca1]   Parameters: {"full_name"=>"student@gmail.com", "email"=>"student@gmail.com", "phone_number"=>"123456789", "password"=>"[FILTERED]"}
+I, [2022-03-04T01:42:05.049230 #32012]  INFO -- : [3f637ff5-0f15-49b3-a27b-a6041a5beca1] Completed 500 Internal Server Error in 416ms (ActiveRecord: 14.7ms | Allocations: 4731)
+F, [2022-03-04T01:42:05.051741 #32012] FATAL -- : [3f637ff5-0f15-49b3-a27b-a6041a5beca1]   
+[3f637ff5-0f15-49b3-a27b-a6041a5beca1] ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_admins_on_email"
+DETAIL:  Key (email)=(student@gmail.com) already exists.
+):
+[3f637ff5-0f15-49b3-a27b-a6041a5beca1]   
+[3f637ff5-0f15-49b3-a27b-a6041a5beca1] app/models/admin.rb:16:in `sign_up_with_credentials'
+[3f637ff5-0f15-49b3-a27b-a6041a5beca1] app/controllers/admins/sessions_controller.rb:14:in `sign_up_with_credentials'
+I, [2022-03-04T01:42:05.838631 #32012]  INFO -- : [6fa43f0b-1944-4add-9521-4a8576e588af] Redirected to http://localhost:3000/
+I, [2022-03-04T01:42:05.839088 #32012]  INFO -- : [6fa43f0b-1944-4add-9521-4a8576e588af] Completed 302 Found in 1608ms (ActiveRecord: 535.2ms | Allocations: 266508)
+I, [2022-03-04T01:42:23.358006 #32012]  INFO -- : [dd698962-a2c1-4424-bae7-b717d81cdb47] Started POST "/sign_up_with_credentials" for 127.0.0.1 at 2022-03-04 01:42:23 +0530
+I, [2022-03-04T01:42:23.365531 #32012]  INFO -- : [dd698962-a2c1-4424-bae7-b717d81cdb47] Processing by Admins::SessionsController#sign_up_with_credentials as HTML
+I, [2022-03-04T01:42:23.365726 #32012]  INFO -- : [dd698962-a2c1-4424-bae7-b717d81cdb47]   Parameters: {"full_name"=>"student@gmail.com", "email"=>"studentp@gmail.com", "phone_number"=>"123456789", "password"=>"[FILTERED]"}
+I, [2022-03-04T01:42:23.809630 #32012]  INFO -- : [dd698962-a2c1-4424-bae7-b717d81cdb47] Redirected to http://localhost:3000/
+I, [2022-03-04T01:42:23.809975 #32012]  INFO -- : [dd698962-a2c1-4424-bae7-b717d81cdb47] Completed 302 Found in 444ms (ActiveRecord: 40.2ms | Allocations: 1388)
+I, [2022-03-04T01:42:23.819966 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388] Started GET "/" for 127.0.0.1 at 2022-03-04 01:42:23 +0530
+I, [2022-03-04T01:42:23.825014 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388] Processing by DashboardsController#show as HTML
+I, [2022-03-04T01:42:23.831074 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388]   Rendered dashboards/show.html.erb within layouts/dashboaard (Duration: 0.4ms | Allocations: 118)
+I, [2022-03-04T01:42:23.874169 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388]   Rendered layout layouts/dashboaard.html.erb (Duration: 43.6ms | Allocations: 12502)
+I, [2022-03-04T01:42:23.874635 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388] Completed 200 OK in 49ms (Views: 41.8ms | ActiveRecord: 4.6ms | Allocations: 13869)

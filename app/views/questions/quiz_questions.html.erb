@@ -1,11 +1,81 @@
-<div class="w-full mt-5 bg-white py-4 px-4">
+<div class="ml-14 mr-14 mt-8 py-4 px-4">
+  <script>var pageItem=1;</script>
+  <%= stylesheet_pack_tag "application" %>
   <% if notice.present? %>
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
   <% end %>
-  <div>
-    <div class="text-lg leading-6 font-medium text-gray-900">
-        Questions <%= Subject.find(params[:id]).name %>
-        <span id="timer" class="float-right mr-14"></span>
+  <div class="text-lg leading-6 font-medium text-gray-900">
+    Questions <%= Subject.find(params[:id]).name %>  
+  </div>
+  <% if params[:type] == "time" %>
+    <div>
+          <div class="float-right">
+            <span class="mr-2">Time Left</span>
+            <span id="hours" class="font-bold text-xl"></span>
+            <span id="mins" class="font-bold text-xl"></span>
+            <span id="seconds" class="font-bold text-xl"></span>
+          </div>
+      </div>
+    </div>  
+    <script>
+      var total_time=<%= @duration %>*60*1000;
+      window.setTimeout(function() {
+                      $("form").submit();
+                    },
+                    total_time);
+    </script>
+    <div class="absolute h-fit shadow-xl bg-lime-300 " style="margin-left:894px;margin-top:172px;">
+  <% else %>
+    <div class="absolute h-fit shadow-xl bg-lime-300 " style="margin-left:880px">
+  <% end %>  
+    <div>
+      <div class="py-2 px-4 mb-4">
+        <div class="float-left">
+          <span id="answered" class="rounded-full bg-green-900 px-1 py-1 text-white">0</span>
+          <span>Answered</span>
+        </div>
+        <div class="ml-8 float-left">
+          
+          <span id="marked" class="rounded-full bg-indigo-700 px-1 py-1 text-white">0</span>
+          <span>Marked</span>
+        </div>
+        <div class="ml-8 float-left">
+          <span id="not-visited" class="rounded-full bg-white px-1 py-1 text-black">0</span>
+          <span>Not visited</span>
+        </div>
+      </div>
+      <div class="py-2 px-4 mb-4">
+        <div class="float-left">
+          <span id="not-answered"  class="rounded-full bg-red-500 px-1 py-1 text-white">0</span>
+          <span>Not Answered</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-xl w-full px-2 text-white bg-green-900">
+      Quiz section
+    </div>
+    <div class="px-4 py-4">
+      <table style="border-collapse: separate;border-spacing:5px">
+      <% i=0 %>
+          <% @questions.each_with_index do |question,index| %>
+            <% i=i+1%>
+            <% if i==1 %>
+              <tr class="px-4">
+            <% end %>
+            <td class="border bg-gray-100 border-black hover:scale-110">
+              <a href="#<%= index+1 %>" class="w-full h-full hover:bg-transparent hover:text-black px-4 py-2">
+                <span class="absolute float-right " >
+                  <%=image_tag image_url("icons/ticker.png"),id:"mark#{question.id}",style:"margin-top:-6px; margin-left:9px;height:22px;display:none"%>
+                </span>
+                <%= index+1 %>
+              </a>
+            </td>
+            <% if i==5 %>
+              </tr>
+              <% i=0 %>
+            <% end %>
+          <% end %>
+      </table>
     </div>
   </div>
   <% if @questions.present? %>
@@ -13,49 +83,120 @@
         <div role="group" aria-labelledby="label-notifications">
           <div class="w-full">
             <div id="questions" class="min-w-full">
-              <%= form_tag do%>
-                <%= render @questions %>            
+              <% pages=0 %>
+              <%= form_tag(test_result_path,method: :post )do%>
+                <%= render @questions %> 
+                <%= hidden_field_tag :subject_id, @questions.first.subject.id%>
+                <div class="mx-auto justify-center flex mb-4">
+                  <button type="button" id="previous" class="bg-gray-400 rounded px-4 py-2">Previous</button>
+                  <button type="button" id="next" class="ml-4 bg-gray-400 rounded px-4 py-2">Next</button>
+                </div>
+                <input id="submit-button" class="w-full bg-green-900 hover:bg-green-700 py-4 text-white rounded-lg" value= "Submit" type ="submit" %>           
               <% end %>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <%= stylesheet_pack_tag "application" %>
-    <div class="text-center my-4">
-      <%= will_paginate @questions %>
-    </div>
-
   <% end %>
 
 </div>
 
+
 <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+  var init = 1;
+  var last = init+1;
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("timer").innerHTML = hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
+  function pagination() {
+    for(i=1;i<= $(".pages").length;i++)
+    {
+      if((i>=init) && (i<=last))
+      {
+        $("#page-item"+i).css("display","block");
+      }
+      else
+      {
+        $("#page-item"+i).css("display","none");
+      }
+    }  
   }
-}, 1000);
+ pagination()
+  $("#next").on("click",function () {
+    if(last < <%=@questions.length%>)
+    {
+      init=last+1;
+      last=init+1;
+    }
+    else
+    {
+
+    }
+    pagination()
+  })
+  $("#previous").on("click",function () {
+    if(init > 2)
+    {
+      init=init-2;
+      last=init+1;
+    }
+    else
+    {
+
+    }
+    pagination()
+  })
+  $("#submit-button").on("click",function () {
+    $(".pages").css("display","block")
+  })
+  //Timer
+  startTimer();
+  duration = <%= @duration %>/60;
+  if(duration <= 1) 
+  {
+    mins = <%= @duration %>-1;
+    hours=0;
+  }
+  else
+  {
+    hours=duration.toString().split(".")[0]
+    mins=(<%= @duration %> - hours*60)-1
+  }
+  seconds=60;
+  function startTimer() {
+    window.setTimeout(function () {
+      seconds--;
+        if (seconds < 1) {
+          seconds = 60;
+          mins--;
+        }
+        if (mins < 0 ) {
+          if(hours >= 1)
+          {
+            mins = 59;
+            hours--;
+          }
+        }
+        if (hours <= 1) {
+          $("#hours").html("0" + hours + ":");
+        } 
+        else 
+        {
+          $("#hours").html(hours + ":");
+        }
+        if (mins < 10) {
+          $("#mins").html("0" + mins + ":");
+        } 
+        else 
+        {
+          $("#mins").html(mins + ":");
+        }
+        if (seconds < 10) {
+          $("#seconds").html("0" + seconds);
+        } else {
+          $("#seconds").html(seconds);
+        }
+        startTimer();
+      }, 1000);
+  };
 </script>
+

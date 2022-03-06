@@ -1,5 +1,6 @@
 class Admin < ApplicationRecord
   has_secure_password
+  has_many :results
   devise :omniauthable, omniauth_providers: [:google_oauth2,:facebook,:linkedin,:github,:twitter]
   has_one :profile
   after_commit :save_profile

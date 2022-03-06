@@ -1,0 +1,67 @@
+<html class="h-full">
+  <head>
+    <title>GoogleOauthDevise</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        .flash__alert   { color: red; }
+        .flash__notice  { color: blue; }
+        .flash__success { color: green; }
+    </style>
+  </head>
+
+  <body>
+    <div style="height:100vh;z-index:100;background-image:linear-gradient(to bottom right, rgba(47, 69, 168, 0.8), rgba(190, 71, 181, 0.8)),url(<%= image_url("homepage_background.jpeg") %>);background-size: 100vw 100vh;">
+        <div class="mx-auto mt-8 mx:auto w-full text-center inline-block ">
+          <ul class="flex justify-center space-x-4">
+            <li class="float-left text-white">
+              <a class="text-white text-lg" style="color:white" href="#" >Demos </a>
+            </li>
+            <li class="float-left text-white ">
+              <a class="text-white text-lg" style="color:white" href="#">Featured</a>
+            </li>
+            <li class="float-left text-white ">
+              <a class="text-white text-lg" style="color:white" href="#">Pages</a>
+            </li>
+            <li class="float-left text-white ">
+              <a class="text-white text-lg" style="color:white" href="#">Elements</a>
+            </li><li class="float-left text-white">
+              <a class="text-white text-lg" style="color:white" href="#">Portfolio</a>
+            </li><li class="float-left text-white ">
+              <a class="text-white text-lg" style="color:white" href="#">Blog</a>
+            </li>
+          </ul>  
+        <div class="float-right text-white mr-5" style="margin-top:-25px">
+              <a href="<%= destroy_admin_session_path %>"class="hover:text-xl text-white text-lg float-right" style="color:white">Sign Out</a>
+        </div>       
+        </div>
+        <%= yield %>
+    </div>    
+  </body>
+</html>
+<style>
+a:link,
+    a:visited {
+      text-decoration:none;
+      background: transparent;
+    }
+ul a:hover{
+  color: white !important;
+}
+
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+</style>

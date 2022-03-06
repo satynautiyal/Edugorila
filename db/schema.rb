@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_20_121325) do
+ActiveRecord::Schema.define(version: 2022_03_05_124513) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -94,17 +94,18 @@ ActiveRecord::Schema.define(version: 2022_02_20_121325) do
   create_table "results", force: :cascade do |t|
     t.integer "marks"
     t.bigint "admin_id", null: false
-    t.bigint "quiz_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "subject_id", null: false
     t.index ["admin_id"], name: "index_results_on_admin_id"
-    t.index ["quiz_id"], name: "index_results_on_quiz_id"
+    t.index ["subject_id"], name: "index_results_on_subject_id"
   end
 
   create_table "subjects", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "duration"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
@@ -113,5 +114,5 @@ ActiveRecord::Schema.define(version: 2022_02_20_121325) do
   add_foreign_key "questions", "subjects"
   add_foreign_key "quizzes", "subjects"
   add_foreign_key "results", "admins"
-  add_foreign_key "results", "quizzes"
+  add_foreign_key "results", "subjects"
 end
