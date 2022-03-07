@@ -1,8 +1,8 @@
 class Admin < ApplicationRecord
   has_secure_password
-  has_many :results
+  has_many :results, dependent: :destroy
   devise :omniauthable, omniauth_providers: [:google_oauth2,:facebook,:linkedin,:github,:twitter]
-  has_one :profile
+  has_one :profile, dependent: :destroy
   after_commit :save_profile
   def self.from_google(from_google_params)
     create_with(uid: from_google_params[:uid], full_name: from_google_params[:full_name], avatar_url: from_google_params[:avatar_url],password: "test").find_or_create_by!(email: from_google_params[:email])

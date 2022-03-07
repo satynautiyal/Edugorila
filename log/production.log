@@ -577,3 +577,267 @@ I, [2022-03-07T22:43:54.790385 #7049]  INFO -- : [6def1871-8014-44b0-82f2-7d5421
 F, [2022-03-07T22:43:54.798274 #7049] FATAL -- : [6def1871-8014-44b0-82f2-7d5421d28419]   
 [6def1871-8014-44b0-82f2-7d5421d28419] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
 [6def1871-8014-44b0-82f2-7d5421d28419]   
+I, [2022-03-07T23:09:56.120233 #9809]  INFO -- : [dddc0929-43c0-475d-a453-aea379effdd2] Started GET "/" for 127.0.0.1 at 2022-03-07 23:09:56 +0530
+I, [2022-03-07T23:09:56.136604 #9809]  INFO -- : [dddc0929-43c0-475d-a453-aea379effdd2] Processing by DashboardsController#show as HTML
+I, [2022-03-07T23:09:56.137607 #9809]  INFO -- : [dddc0929-43c0-475d-a453-aea379effdd2] Completed 401 Unauthorized in 1ms (Allocations: 244)
+I, [2022-03-07T23:09:56.147444 #9809]  INFO -- : [e446a53b-8509-44d9-b985-d983245c02d2] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 23:09:56 +0530
+I, [2022-03-07T23:09:56.153963 #9809]  INFO -- : [e446a53b-8509-44d9-b985-d983245c02d2] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T23:09:56.296233 #9809]  INFO -- : [e446a53b-8509-44d9-b985-d983245c02d2]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1446)
+I, [2022-03-07T23:09:56.297756 #9809]  INFO -- : [e446a53b-8509-44d9-b985-d983245c02d2]   Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2105)
+I, [2022-03-07T23:09:56.298139 #9809]  INFO -- : [e446a53b-8509-44d9-b985-d983245c02d2] Completed 200 OK in 144ms (Views: 9.7ms | ActiveRecord: 17.4ms | Allocations: 13044)
+I, [2022-03-07T23:09:56.334963 #9809]  INFO -- : [b24ec07d-d16b-4d0b-b049-15b69fb5fa3a] Started GET "/assets/tailwind-d66e965866bf90b88e53632b32807a5a7f0b4fefb040102635bef7cccd16cd31.css" for 127.0.0.1 at 2022-03-07 23:09:56 +0530
+I, [2022-03-07T23:09:56.347740 #9809]  INFO -- : [0c561c49-55aa-4611-8acb-a57670a294aa] Started GET "/assets/application-a4375311ee992e8080e06c9388b14b73cab4c22f400505f345c34b53ed5e7fd2.css" for 127.0.0.1 at 2022-03-07 23:09:56 +0530
+I, [2022-03-07T23:09:56.350904 #9809]  INFO -- : [5e85212c-7b81-4dcc-b0a4-5c0afe08ae08] Started GET "/assets/inter-font-8c3e82affb176f4bca9616b838d906343d1251adc8408efe02cf2b1e4fcf2bc4.css" for 127.0.0.1 at 2022-03-07 23:09:56 +0530
+I, [2022-03-07T23:10:09.297430 #9809]  INFO -- : [2e0e2ce1-3991-45ba-97ec-153d90c07e82] Started POST "/sign_in_with_credentials" for 127.0.0.1 at 2022-03-07 23:10:09 +0530
+I, [2022-03-07T23:10:09.303227 #9809]  INFO -- : [2e0e2ce1-3991-45ba-97ec-153d90c07e82] Processing by Admins::SessionsController#sign_in_with_credentials as HTML
+I, [2022-03-07T23:10:09.303445 #9809]  INFO -- : [2e0e2ce1-3991-45ba-97ec-153d90c07e82]   Parameters: {"login"=>"admin@gmail.com", "password"=>"[FILTERED]"}
+I, [2022-03-07T23:10:09.397174 #9809]  INFO -- : [2e0e2ce1-3991-45ba-97ec-153d90c07e82] Redirected to http://localhost:5000/admins/sign_in
+I, [2022-03-07T23:10:09.397434 #9809]  INFO -- : [2e0e2ce1-3991-45ba-97ec-153d90c07e82] Completed 302 Found in 94ms (ActiveRecord: 72.0ms | Allocations: 1975)
+I, [2022-03-07T23:10:09.405215 #9809]  INFO -- : [9cae986f-aeea-4438-8dd5-625988f42b74] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 23:10:09 +0530
+I, [2022-03-07T23:10:09.409721 #9809]  INFO -- : [9cae986f-aeea-4438-8dd5-625988f42b74] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T23:10:09.412347 #9809]  INFO -- : [9cae986f-aeea-4438-8dd5-625988f42b74]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 734)
+I, [2022-03-07T23:10:09.413068 #9809]  INFO -- : [9cae986f-aeea-4438-8dd5-625988f42b74]   Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1052)
+I, [2022-03-07T23:10:09.413373 #9809]  INFO -- : [9cae986f-aeea-4438-8dd5-625988f42b74] Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1628)
+I, [2022-03-07T23:10:13.505159 #9809]  INFO -- : [12cc5961-a9c8-46d3-aaec-f0f65fbcdf06] Started POST "/register" for 127.0.0.1 at 2022-03-07 23:10:13 +0530
+I, [2022-03-07T23:10:13.510528 #9809]  INFO -- : [12cc5961-a9c8-46d3-aaec-f0f65fbcdf06] Processing by Admins::SessionsController#register as HTML
+I, [2022-03-07T23:10:13.510644 #9809]  INFO -- : [12cc5961-a9c8-46d3-aaec-f0f65fbcdf06]   Parameters: {"authenticity_token"=>"[FILTERED]"}
+I, [2022-03-07T23:10:13.517612 #9809]  INFO -- : [12cc5961-a9c8-46d3-aaec-f0f65fbcdf06]   Rendered admins/sessions/register.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1055)
+I, [2022-03-07T23:10:13.518786 #9809]  INFO -- : [12cc5961-a9c8-46d3-aaec-f0f65fbcdf06]   Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 1363)
+I, [2022-03-07T23:10:13.519285 #9809]  INFO -- : [12cc5961-a9c8-46d3-aaec-f0f65fbcdf06] Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 1912)
+I, [2022-03-07T23:10:31.757948 #9809]  INFO -- : [9225104f-cb0e-4f56-93e8-25c348537b46] Started POST "/sign_up_with_credentials" for 127.0.0.1 at 2022-03-07 23:10:31 +0530
+I, [2022-03-07T23:10:31.765488 #9809]  INFO -- : [9225104f-cb0e-4f56-93e8-25c348537b46] Processing by Admins::SessionsController#sign_up_with_credentials as HTML
+I, [2022-03-07T23:10:31.765819 #9809]  INFO -- : [9225104f-cb0e-4f56-93e8-25c348537b46]   Parameters: {"full_name"=>"admin", "email"=>"admin@gmail.com", "phone_number"=>"123456789", "password"=>"[FILTERED]"}
+I, [2022-03-07T23:10:32.290751 #9809]  INFO -- : [9225104f-cb0e-4f56-93e8-25c348537b46] Redirected to http://localhost:5000/
+I, [2022-03-07T23:10:32.291030 #9809]  INFO -- : [9225104f-cb0e-4f56-93e8-25c348537b46] Completed 302 Found in 525ms (ActiveRecord: 111.5ms | Allocations: 6110)
+I, [2022-03-07T23:10:32.299868 #9809]  INFO -- : [d56d468e-4684-4f22-838a-dc193a4cafd5] Started GET "/" for 127.0.0.1 at 2022-03-07 23:10:32 +0530
+I, [2022-03-07T23:10:32.304389 #9809]  INFO -- : [d56d468e-4684-4f22-838a-dc193a4cafd5] Processing by DashboardsController#show as HTML
+I, [2022-03-07T23:10:32.313216 #9809]  INFO -- : [d56d468e-4684-4f22-838a-dc193a4cafd5]   Rendered subjects/index.html.erb within layouts/admin (Duration: 3.6ms | Allocations: 655)
+I, [2022-03-07T23:10:32.315420 #9809]  INFO -- : [d56d468e-4684-4f22-838a-dc193a4cafd5]   Rendered layout layouts/admin.html.erb (Duration: 5.9ms | Allocations: 1376)
+I, [2022-03-07T23:10:32.315826 #9809]  INFO -- : [d56d468e-4684-4f22-838a-dc193a4cafd5] Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 1.4ms | Allocations: 2682)
+I, [2022-03-07T23:10:37.914661 #9809]  INFO -- : [f8283e51-dba9-440d-8248-4f4b69f5c207] Started GET "/subjects/new" for 127.0.0.1 at 2022-03-07 23:10:37 +0530
+I, [2022-03-07T23:10:37.922258 #9809]  INFO -- : [f8283e51-dba9-440d-8248-4f4b69f5c207] Processing by SubjectsController#new as HTML
+I, [2022-03-07T23:10:37.948302 #9809]  INFO -- : [f8283e51-dba9-440d-8248-4f4b69f5c207]   Rendered subjects/new.html.erb within layouts/admin (Duration: 8.0ms | Allocations: 2514)
+I, [2022-03-07T23:10:37.948436 #9809]  INFO -- : [f8283e51-dba9-440d-8248-4f4b69f5c207]   Rendered layout layouts/admin.html.erb (Duration: 8.2ms | Allocations: 2559)
+I, [2022-03-07T23:10:37.948740 #9809]  INFO -- : [f8283e51-dba9-440d-8248-4f4b69f5c207] Completed 500 Internal Server Error in 26ms (ActiveRecord: 5.9ms | Allocations: 5449)
+F, [2022-03-07T23:10:37.949980 #9809] FATAL -- : [f8283e51-dba9-440d-8248-4f4b69f5c207]   
+[f8283e51-dba9-440d-8248-4f4b69f5c207] ActionView::Template::Error (undefined method `number' for #<ActionView::Helpers::FormBuilder:0x00007fd8e81d2018 @nested_child_index={}, @options={:class=>"contents", :allow_method_names_outside_object=>true, :skip_default_ids=>false}, @template=#<ActionView::Base:0x0000000000c738>, @object=#<Subject id: nil, name: nil, created_at: nil, updated_at: nil>, @object_name="subject", @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>):
+[f8283e51-dba9-440d-8248-4f4b69f5c207]     18:   <div class="my-5">
+[f8283e51-dba9-440d-8248-4f4b69f5c207]     19:     <div class="text-sm text-red">if time quiz</div>
+[f8283e51-dba9-440d-8248-4f4b69f5c207]     20:     <%= form.label :duration %>
+[f8283e51-dba9-440d-8248-4f4b69f5c207]     21:     <%= form.number :duration, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+[f8283e51-dba9-440d-8248-4f4b69f5c207]     22:   </div>
+[f8283e51-dba9-440d-8248-4f4b69f5c207]     23:   <div class="my-5">
+[f8283e51-dba9-440d-8248-4f4b69f5c207]     24:     <%= form.label :upload_file %>
+[f8283e51-dba9-440d-8248-4f4b69f5c207]   
+[f8283e51-dba9-440d-8248-4f4b69f5c207] app/views/subjects/_form.html.erb:21
+[f8283e51-dba9-440d-8248-4f4b69f5c207] app/views/subjects/_form.html.erb:1
+[f8283e51-dba9-440d-8248-4f4b69f5c207] app/views/subjects/new.html.erb:4
+[f8283e51-dba9-440d-8248-4f4b69f5c207] app/controllers/subjects_controller.rb:18:in `new'
+I, [2022-03-07T23:10:51.443706 #9809]  INFO -- : [06a42f95-0a40-4260-8ada-4c31a0e2f628] Started GET "/subjects/new" for 127.0.0.1 at 2022-03-07 23:10:51 +0530
+I, [2022-03-07T23:10:51.450960 #9809]  INFO -- : [06a42f95-0a40-4260-8ada-4c31a0e2f628] Processing by SubjectsController#new as HTML
+I, [2022-03-07T23:10:51.465806 #9809]  INFO -- : [06a42f95-0a40-4260-8ada-4c31a0e2f628]   Rendered subjects/new.html.erb within layouts/admin (Duration: 7.5ms | Allocations: 2195)
+I, [2022-03-07T23:10:51.467910 #9809]  INFO -- : [06a42f95-0a40-4260-8ada-4c31a0e2f628]   Rendered layout layouts/admin.html.erb (Duration: 9.7ms | Allocations: 2891)
+I, [2022-03-07T23:10:51.468321 #9809]  INFO -- : [06a42f95-0a40-4260-8ada-4c31a0e2f628] Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 1.1ms | Allocations: 4163)
+I, [2022-03-07T23:11:49.406350 #9809]  INFO -- : [eb87a897-f345-44b3-8340-c650b4216922] Started GET "/subjects/new" for 127.0.0.1 at 2022-03-07 23:11:49 +0530
+I, [2022-03-07T23:11:49.413531 #9809]  INFO -- : [eb87a897-f345-44b3-8340-c650b4216922] Processing by SubjectsController#new as HTML
+I, [2022-03-07T23:11:49.424088 #9809]  INFO -- : [eb87a897-f345-44b3-8340-c650b4216922]   Rendered subjects/new.html.erb within layouts/admin (Duration: 5.2ms | Allocations: 1929)
+I, [2022-03-07T23:11:49.426719 #9809]  INFO -- : [eb87a897-f345-44b3-8340-c650b4216922]   Rendered layout layouts/admin.html.erb (Duration: 7.9ms | Allocations: 2625)
+I, [2022-03-07T23:11:49.427249 #9809]  INFO -- : [eb87a897-f345-44b3-8340-c650b4216922] Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.5ms | Allocations: 3888)
+I, [2022-03-07T23:12:02.158532 #9809]  INFO -- : [2cf843b6-e40a-4fa9-a129-47a5f1f54199] Started POST "/subjects" for 127.0.0.1 at 2022-03-07 23:12:02 +0530
+I, [2022-03-07T23:12:02.163047 #9809]  INFO -- : [2cf843b6-e40a-4fa9-a129-47a5f1f54199] Processing by SubjectsController#create as HTML
+I, [2022-03-07T23:12:02.163188 #9809]  INFO -- : [2cf843b6-e40a-4fa9-a129-47a5f1f54199]   Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>{"name"=>"English", "duration"=>"1", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x000055f85cf3b3d0 @tempfile=#<Tempfile:/tmp/RackMultipart20220307-9809-gidtvs.txt>, @original_filename="file1.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"subject[upload_file]\"; filename=\"file1.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Subject"}
+I, [2022-03-07T23:12:02.283618 #9809]  INFO -- : [2cf843b6-e40a-4fa9-a129-47a5f1f54199] Redirected to http://localhost:5000/
+I, [2022-03-07T23:12:02.284063 #9809]  INFO -- : [2cf843b6-e40a-4fa9-a129-47a5f1f54199] Completed 302 Found in 121ms (ActiveRecord: 98.1ms | Allocations: 7367)
+I, [2022-03-07T23:12:02.291409 #9809]  INFO -- : [047da84e-0d3a-4912-b539-938502512f67] Started GET "/" for 127.0.0.1 at 2022-03-07 23:12:02 +0530
+I, [2022-03-07T23:12:02.295832 #9809]  INFO -- : [047da84e-0d3a-4912-b539-938502512f67] Processing by DashboardsController#show as HTML
+I, [2022-03-07T23:12:02.303612 #9809]  INFO -- : [047da84e-0d3a-4912-b539-938502512f67]   Rendered subjects/index.html.erb within layouts/admin (Duration: 3.6ms | Allocations: 968)
+I, [2022-03-07T23:12:02.304973 #9809]  INFO -- : [047da84e-0d3a-4912-b539-938502512f67]   Rendered layout layouts/admin.html.erb (Duration: 5.0ms | Allocations: 1405)
+I, [2022-03-07T23:12:02.305337 #9809]  INFO -- : [047da84e-0d3a-4912-b539-938502512f67] Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.9ms | Allocations: 2318)
+I, [2022-03-07T23:12:08.877156 #9809]  INFO -- : [f49a1ae1-fe28-47a3-9fab-9be69c434b74] Started GET "/admins/sign_out" for 127.0.0.1 at 2022-03-07 23:12:08 +0530
+I, [2022-03-07T23:12:08.884397 #9809]  INFO -- : [f49a1ae1-fe28-47a3-9fab-9be69c434b74] Processing by Admins::SessionsController#destroy as HTML
+I, [2022-03-07T23:12:08.889517 #9809]  INFO -- : [f49a1ae1-fe28-47a3-9fab-9be69c434b74] Redirected to http://localhost:5000/admins/sign_in
+I, [2022-03-07T23:12:08.889784 #9809]  INFO -- : [f49a1ae1-fe28-47a3-9fab-9be69c434b74] Completed 302 Found in 5ms (ActiveRecord: 0.6ms | Allocations: 767)
+I, [2022-03-07T23:12:08.896360 #9809]  INFO -- : [19a99ad6-c9a9-4236-a37d-ebfffe09e0d3] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 23:12:08 +0530
+I, [2022-03-07T23:12:08.903076 #9809]  INFO -- : [19a99ad6-c9a9-4236-a37d-ebfffe09e0d3] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T23:12:08.912067 #9809]  INFO -- : [19a99ad6-c9a9-4236-a37d-ebfffe09e0d3]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1256)
+I, [2022-03-07T23:12:08.913327 #9809]  INFO -- : [19a99ad6-c9a9-4236-a37d-ebfffe09e0d3]   Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1821)
+I, [2022-03-07T23:12:08.913667 #9809]  INFO -- : [19a99ad6-c9a9-4236-a37d-ebfffe09e0d3] Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3882)
+I, [2022-03-07T23:12:14.210117 #9809]  INFO -- : [e880293b-07aa-4847-ac1a-edc6a03586df] Started POST "/sign_in_with_credentials" for 127.0.0.1 at 2022-03-07 23:12:14 +0530
+I, [2022-03-07T23:12:14.218124 #9809]  INFO -- : [e880293b-07aa-4847-ac1a-edc6a03586df] Processing by Admins::SessionsController#sign_in_with_credentials as HTML
+I, [2022-03-07T23:12:14.218234 #9809]  INFO -- : [e880293b-07aa-4847-ac1a-edc6a03586df]   Parameters: {"login"=>"student@gmail.com", "password"=>"[FILTERED]"}
+I, [2022-03-07T23:12:14.618960 #9809]  INFO -- : [e880293b-07aa-4847-ac1a-edc6a03586df] Redirected to http://localhost:5000/
+I, [2022-03-07T23:12:14.619257 #9809]  INFO -- : [e880293b-07aa-4847-ac1a-edc6a03586df] Completed 302 Found in 401ms (ActiveRecord: 0.6ms | Allocations: 578)
+I, [2022-03-07T23:12:14.625017 #9809]  INFO -- : [ede4ad64-4ce1-452e-a5b0-2871d3d47c69] Started GET "/" for 127.0.0.1 at 2022-03-07 23:12:14 +0530
+I, [2022-03-07T23:12:14.631606 #9809]  INFO -- : [ede4ad64-4ce1-452e-a5b0-2871d3d47c69] Processing by DashboardsController#show as HTML
+I, [2022-03-07T23:12:14.635378 #9809]  INFO -- : [ede4ad64-4ce1-452e-a5b0-2871d3d47c69]   Rendered dashboards/show.html.erb within layouts/dashboaard (Duration: 0.8ms | Allocations: 276)
+I, [2022-03-07T23:12:14.640834 #9809]  INFO -- : [ede4ad64-4ce1-452e-a5b0-2871d3d47c69]   Rendered layout layouts/dashboaard.html.erb (Duration: 6.3ms | Allocations: 1489)
+I, [2022-03-07T23:12:14.641323 #9809]  INFO -- : [ede4ad64-4ce1-452e-a5b0-2871d3d47c69] Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.8ms | Allocations: 2343)
+I, [2022-03-07T23:12:14.686667 #9809]  INFO -- : [cb1448cf-a2a9-40bd-8126-ef72848593cd] Started GET "/assets/bg-home-7c274bb814e608a3ea8a5eb273b81b94261a9f801b0a380469630813abe72739.svg" for 127.0.0.1 at 2022-03-07 23:12:14 +0530
+I, [2022-03-07T23:12:15.984423 #9809]  INFO -- : [1dcabb62-8658-4d02-bf84-7f7a2c27c9ba] Started GET "/questions?id=1" for 127.0.0.1 at 2022-03-07 23:12:15 +0530
+I, [2022-03-07T23:12:15.989853 #9809]  INFO -- : [1dcabb62-8658-4d02-bf84-7f7a2c27c9ba] Processing by QuestionsController#index as HTML
+I, [2022-03-07T23:12:15.991093 #9809]  INFO -- : [1dcabb62-8658-4d02-bf84-7f7a2c27c9ba]   Parameters: {"id"=>"1"}
+I, [2022-03-07T23:12:15.993359 #9809]  INFO -- : [1dcabb62-8658-4d02-bf84-7f7a2c27c9ba] Redirected to http://localhost:5000/select_quiz_type?id=1
+I, [2022-03-07T23:12:15.993681 #9809]  INFO -- : [1dcabb62-8658-4d02-bf84-7f7a2c27c9ba] Completed 302 Found in 2ms (ActiveRecord: 0.2ms | Allocations: 552)
+I, [2022-03-07T23:12:15.999646 #9809]  INFO -- : [0cc7324c-6469-4d56-959f-6fe4efb18845] Started GET "/select_quiz_type?id=1" for 127.0.0.1 at 2022-03-07 23:12:15 +0530
+I, [2022-03-07T23:12:16.005183 #9809]  INFO -- : [0cc7324c-6469-4d56-959f-6fe4efb18845] Processing by QuestionsController#select_quiz_type as HTML
+I, [2022-03-07T23:12:16.005300 #9809]  INFO -- : [0cc7324c-6469-4d56-959f-6fe4efb18845]   Parameters: {"id"=>"1"}
+I, [2022-03-07T23:12:16.013260 #9809]  INFO -- : [0cc7324c-6469-4d56-959f-6fe4efb18845]   Rendered questions/select_quiz_type.html.erb within layouts/dashboaard (Duration: 2.0ms | Allocations: 630)
+I, [2022-03-07T23:12:16.015947 #9809]  INFO -- : [0cc7324c-6469-4d56-959f-6fe4efb18845]   Rendered layout layouts/dashboaard.html.erb (Duration: 4.8ms | Allocations: 1347)
+I, [2022-03-07T23:12:16.016315 #9809]  INFO -- : [0cc7324c-6469-4d56-959f-6fe4efb18845] Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 1.3ms | Allocations: 2235)
+I, [2022-03-07T23:12:16.046437 #9809]  INFO -- : [5bf3d5ae-ff00-4461-b512-91d2583b5780] Started GET "/assets/marathon_quiz-198c25767a6d5e5f6041e4e9282fd727b0ab2b0d37f63c4f8138574f808cf768.gif" for 127.0.0.1 at 2022-03-07 23:12:16 +0530
+I, [2022-03-07T23:12:16.049971 #9809]  INFO -- : [c2fcba1d-c323-4ff5-8afb-04ee1cb01c7a] Started GET "/assets/time_quiz-fa6621906cd98fc67c16759a30d7c6b84e4d35fa1ac3381c8c11daf8e5898845.gif" for 127.0.0.1 at 2022-03-07 23:12:16 +0530
+I, [2022-03-07T23:12:20.553437 #9809]  INFO -- : [afd275d4-84e8-4437-88f7-3f3e1bf9abb0] Started GET "/quiz_questions?id=1&type=time" for 127.0.0.1 at 2022-03-07 23:12:20 +0530
+I, [2022-03-07T23:12:20.559033 #9809]  INFO -- : [afd275d4-84e8-4437-88f7-3f3e1bf9abb0] Processing by QuestionsController#quiz_questions as HTML
+I, [2022-03-07T23:12:20.559136 #9809]  INFO -- : [afd275d4-84e8-4437-88f7-3f3e1bf9abb0]   Parameters: {"id"=>"1", "type"=>"time"}
+I, [2022-03-07T23:12:20.576195 #9809]  INFO -- : [afd275d4-84e8-4437-88f7-3f3e1bf9abb0] Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms | Allocations: 3367)
+F, [2022-03-07T23:12:20.577789 #9809] FATAL -- : [afd275d4-84e8-4437-88f7-3f3e1bf9abb0]   
+[afd275d4-84e8-4437-88f7-3f3e1bf9abb0] NoMethodError (undefined method `duration' for #<Subject id: 1, name: "English", created_at: "2022-03-07 17:42:02.166691000 +0000", updated_at: "2022-03-07 17:42:02.166691000 +0000">):
+[afd275d4-84e8-4437-88f7-3f3e1bf9abb0]   
+[afd275d4-84e8-4437-88f7-3f3e1bf9abb0] app/controllers/questions_controller.rb:24:in `quiz_questions'
+I, [2022-03-07T23:13:58.096751 #9809]  INFO -- : [646129c7-cb73-4cf9-a954-791b263f941e] Started GET "/admins/sign_out" for 127.0.0.1 at 2022-03-07 23:13:58 +0530
+I, [2022-03-07T23:13:58.252788 #9809]  INFO -- : [646129c7-cb73-4cf9-a954-791b263f941e] Processing by Admins::SessionsController#destroy as HTML
+I, [2022-03-07T23:13:58.277667 #9809]  INFO -- : [646129c7-cb73-4cf9-a954-791b263f941e] Redirected to http://localhost:5000/admins/sign_in
+I, [2022-03-07T23:13:58.277940 #9809]  INFO -- : [646129c7-cb73-4cf9-a954-791b263f941e] Completed 302 Found in 25ms (ActiveRecord: 6.5ms | Allocations: 5289)
+I, [2022-03-07T23:13:58.285054 #9809]  INFO -- : [567debaa-917f-48f3-b26f-f8dfcbf166f3] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 23:13:58 +0530
+I, [2022-03-07T23:13:58.289974 #9809]  INFO -- : [567debaa-917f-48f3-b26f-f8dfcbf166f3] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T23:13:58.297482 #9809]  INFO -- : [567debaa-917f-48f3-b26f-f8dfcbf166f3]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 812)
+I, [2022-03-07T23:13:58.298714 #9809]  INFO -- : [567debaa-917f-48f3-b26f-f8dfcbf166f3]   Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 1198)
+I, [2022-03-07T23:13:58.299162 #9809]  INFO -- : [567debaa-917f-48f3-b26f-f8dfcbf166f3] Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2050)
+I, [2022-03-07T23:14:03.375495 #9809]  INFO -- : [3702d4bc-6a3c-4d1e-9f16-8038219f238e] Started POST "/sign_in_with_credentials" for 127.0.0.1 at 2022-03-07 23:14:03 +0530
+I, [2022-03-07T23:14:03.381789 #9809]  INFO -- : [3702d4bc-6a3c-4d1e-9f16-8038219f238e] Processing by Admins::SessionsController#sign_in_with_credentials as HTML
+I, [2022-03-07T23:14:03.381979 #9809]  INFO -- : [3702d4bc-6a3c-4d1e-9f16-8038219f238e]   Parameters: {"login"=>"admin@gmail.com", "password"=>"[FILTERED]"}
+I, [2022-03-07T23:14:03.780161 #9809]  INFO -- : [3702d4bc-6a3c-4d1e-9f16-8038219f238e] Redirected to http://localhost:5000/
+I, [2022-03-07T23:14:03.780562 #9809]  INFO -- : [3702d4bc-6a3c-4d1e-9f16-8038219f238e] Completed 302 Found in 398ms (ActiveRecord: 0.8ms | Allocations: 860)
+I, [2022-03-07T23:14:03.789217 #9809]  INFO -- : [a4298fd3-0055-4fb3-b7d1-57ba42105f63] Started GET "/" for 127.0.0.1 at 2022-03-07 23:14:03 +0530
+I, [2022-03-07T23:14:03.799449 #9809]  INFO -- : [a4298fd3-0055-4fb3-b7d1-57ba42105f63] Processing by DashboardsController#show as HTML
+I, [2022-03-07T23:14:03.819764 #9809]  INFO -- : [a4298fd3-0055-4fb3-b7d1-57ba42105f63]   Rendered subjects/index.html.erb within layouts/admin (Duration: 12.3ms | Allocations: 2352)
+I, [2022-03-07T23:14:03.821464 #9809]  INFO -- : [a4298fd3-0055-4fb3-b7d1-57ba42105f63]   Rendered layout layouts/admin.html.erb (Duration: 14.0ms | Allocations: 2798)
+I, [2022-03-07T23:14:03.821877 #9809]  INFO -- : [a4298fd3-0055-4fb3-b7d1-57ba42105f63] Completed 200 OK in 22ms (Views: 8.9ms | ActiveRecord: 6.8ms | Allocations: 5124)
+I, [2022-03-07T23:14:10.098295 #9809]  INFO -- : [57cb46ea-3964-43d9-a550-3b63045b646a] Started GET "/subjects/new" for 127.0.0.1 at 2022-03-07 23:14:10 +0530
+I, [2022-03-07T23:14:10.110234 #9809]  INFO -- : [57cb46ea-3964-43d9-a550-3b63045b646a] Processing by SubjectsController#new as HTML
+I, [2022-03-07T23:14:10.117316 #9809]  INFO -- : [57cb46ea-3964-43d9-a550-3b63045b646a]   Rendered subjects/new.html.erb within layouts/admin (Duration: 3.5ms | Allocations: 1494)
+I, [2022-03-07T23:14:10.119284 #9809]  INFO -- : [57cb46ea-3964-43d9-a550-3b63045b646a]   Rendered layout layouts/admin.html.erb (Duration: 5.5ms | Allocations: 1922)
+I, [2022-03-07T23:14:10.119877 #9809]  INFO -- : [57cb46ea-3964-43d9-a550-3b63045b646a] Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 2938)
+I, [2022-03-07T23:14:19.956962 #9809]  INFO -- : [aa98e5b5-2a95-4b51-a21c-f6d305a1c34b] Started POST "/subjects" for 127.0.0.1 at 2022-03-07 23:14:19 +0530
+I, [2022-03-07T23:14:19.962147 #9809]  INFO -- : [aa98e5b5-2a95-4b51-a21c-f6d305a1c34b] Processing by SubjectsController#create as HTML
+I, [2022-03-07T23:14:19.962404 #9809]  INFO -- : [aa98e5b5-2a95-4b51-a21c-f6d305a1c34b]   Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>{"name"=>"Hindi", "duration"=>"1", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd8e8b5db00 @tempfile=#<Tempfile:/tmp/RackMultipart20220307-9809-uyz25y.txt>, @original_filename="file1.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"subject[upload_file]\"; filename=\"file1.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Subject"}
+I, [2022-03-07T23:14:19.965601 #9809]  INFO -- : [aa98e5b5-2a95-4b51-a21c-f6d305a1c34b] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 786)
+F, [2022-03-07T23:14:19.966328 #9809] FATAL -- : [aa98e5b5-2a95-4b51-a21c-f6d305a1c34b]   
+[aa98e5b5-2a95-4b51-a21c-f6d305a1c34b] ActiveModel::UnknownAttributeError (unknown attribute 'duration' for Subject.):
+[aa98e5b5-2a95-4b51-a21c-f6d305a1c34b]   
+[aa98e5b5-2a95-4b51-a21c-f6d305a1c34b] app/controllers/subjects_controller.rb:30:in `create'
+I, [2022-03-07T23:15:07.092422 #10575]  INFO -- : Migrating to AddColumnsToSubject (20220305074403)
+I, [2022-03-07T23:15:07.239795 #10575]  INFO -- : Migrating to ChangeColumnOfResult (20220305124513)
+I, [2022-03-07T23:15:13.272381 #9809]  INFO -- : [bc12e226-e98a-42ca-931e-edb3845463e8] Started POST "/subjects" for 127.0.0.1 at 2022-03-07 23:15:13 +0530
+I, [2022-03-07T23:15:13.280691 #9809]  INFO -- : [bc12e226-e98a-42ca-931e-edb3845463e8] Processing by SubjectsController#create as HTML
+I, [2022-03-07T23:15:13.280870 #9809]  INFO -- : [bc12e226-e98a-42ca-931e-edb3845463e8]   Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>{"name"=>"Hindi", "duration"=>"1", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd8e88e59b8 @tempfile=#<Tempfile:/tmp/RackMultipart20220307-9809-62v2er.txt>, @original_filename="file1.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"subject[upload_file]\"; filename=\"file1.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Subject"}
+I, [2022-03-07T23:15:13.283480 #9809]  INFO -- : [bc12e226-e98a-42ca-931e-edb3845463e8] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 539)
+F, [2022-03-07T23:15:13.284259 #9809] FATAL -- : [bc12e226-e98a-42ca-931e-edb3845463e8]   
+[bc12e226-e98a-42ca-931e-edb3845463e8] ActiveModel::UnknownAttributeError (unknown attribute 'duration' for Subject.):
+[bc12e226-e98a-42ca-931e-edb3845463e8]   
+[bc12e226-e98a-42ca-931e-edb3845463e8] app/controllers/subjects_controller.rb:30:in `create'
+I, [2022-03-07T23:15:22.796931 #9809]  INFO -- : [851bf45b-9d6c-4201-955f-cfdd2ae207d2] Started GET "/subjects/new" for 127.0.0.1 at 2022-03-07 23:15:22 +0530
+I, [2022-03-07T23:15:22.805145 #9809]  INFO -- : [851bf45b-9d6c-4201-955f-cfdd2ae207d2] Processing by SubjectsController#new as HTML
+I, [2022-03-07T23:15:22.810401 #9809]  INFO -- : [851bf45b-9d6c-4201-955f-cfdd2ae207d2]   Rendered subjects/new.html.erb within layouts/admin (Duration: 2.8ms | Allocations: 1124)
+I, [2022-03-07T23:15:22.814997 #9809]  INFO -- : [851bf45b-9d6c-4201-955f-cfdd2ae207d2]   Rendered layout layouts/admin.html.erb (Duration: 7.4ms | Allocations: 1454)
+I, [2022-03-07T23:15:22.816255 #9809]  INFO -- : [851bf45b-9d6c-4201-955f-cfdd2ae207d2] Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 1986)
+I, [2022-03-07T23:15:32.015971 #9809]  INFO -- : [64305ba7-f910-4089-9148-835f5d16a0a2] Started POST "/subjects" for 127.0.0.1 at 2022-03-07 23:15:32 +0530
+I, [2022-03-07T23:15:32.021731 #9809]  INFO -- : [64305ba7-f910-4089-9148-835f5d16a0a2] Processing by SubjectsController#create as HTML
+I, [2022-03-07T23:15:32.021884 #9809]  INFO -- : [64305ba7-f910-4089-9148-835f5d16a0a2]   Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>{"name"=>"Hindi", "duration"=>"1", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd8e879d830 @tempfile=#<Tempfile:/tmp/RackMultipart20220307-9809-y85acr.txt>, @original_filename="file1.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"subject[upload_file]\"; filename=\"file1.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Subject"}
+I, [2022-03-07T23:15:32.024457 #9809]  INFO -- : [64305ba7-f910-4089-9148-835f5d16a0a2] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 538)
+F, [2022-03-07T23:15:32.025245 #9809] FATAL -- : [64305ba7-f910-4089-9148-835f5d16a0a2]   
+[64305ba7-f910-4089-9148-835f5d16a0a2] ActiveModel::UnknownAttributeError (unknown attribute 'duration' for Subject.):
+[64305ba7-f910-4089-9148-835f5d16a0a2]   
+[64305ba7-f910-4089-9148-835f5d16a0a2] app/controllers/subjects_controller.rb:30:in `create'
+I, [2022-03-07T23:18:33.014723 #9809]  INFO -- : [6e5a8307-3c4e-47a0-913f-7e6a7c87989a] Started GET "/subjects/new" for 127.0.0.1 at 2022-03-07 23:18:33 +0530
+I, [2022-03-07T23:18:33.123345 #9809]  INFO -- : [6e5a8307-3c4e-47a0-913f-7e6a7c87989a] Processing by SubjectsController#new as HTML
+I, [2022-03-07T23:18:33.166787 #9809]  INFO -- : [6e5a8307-3c4e-47a0-913f-7e6a7c87989a]   Rendered subjects/new.html.erb within layouts/admin (Duration: 9.0ms | Allocations: 1407)
+I, [2022-03-07T23:18:33.167905 #9809]  INFO -- : [6e5a8307-3c4e-47a0-913f-7e6a7c87989a]   Rendered layout layouts/admin.html.erb (Duration: 10.1ms | Allocations: 1841)
+I, [2022-03-07T23:18:33.168610 #9809]  INFO -- : [6e5a8307-3c4e-47a0-913f-7e6a7c87989a] Completed 200 OK in 45ms (Views: 11.5ms | ActiveRecord: 8.4ms | Allocations: 11443)
+I, [2022-03-07T23:18:42.567885 #9809]  INFO -- : [0b3869b8-284a-44be-9334-9de838a21bd2] Started POST "/subjects" for 127.0.0.1 at 2022-03-07 23:18:42 +0530
+I, [2022-03-07T23:18:42.574571 #9809]  INFO -- : [0b3869b8-284a-44be-9334-9de838a21bd2] Processing by SubjectsController#create as HTML
+I, [2022-03-07T23:18:42.574710 #9809]  INFO -- : [0b3869b8-284a-44be-9334-9de838a21bd2]   Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>{"name"=>"English", "duration"=>"12", "upload_file"=>#<ActionDispatch::Http::UploadedFile:0x00007fd8e902f250 @tempfile=#<Tempfile:/tmp/RackMultipart20220307-9809-m1fwaf.txt>, @original_filename="file1.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"subject[upload_file]\"; filename=\"file1.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Subject"}
+I, [2022-03-07T23:18:42.641677 #9809]  INFO -- : [0b3869b8-284a-44be-9334-9de838a21bd2] Redirected to http://localhost:5000/
+I, [2022-03-07T23:18:42.641947 #9809]  INFO -- : [0b3869b8-284a-44be-9334-9de838a21bd2] Completed 302 Found in 67ms (ActiveRecord: 45.7ms | Allocations: 7515)
+I, [2022-03-07T23:18:42.647682 #9809]  INFO -- : [271b8844-dd87-4b9f-9e9d-3de8140598ad] Started GET "/" for 127.0.0.1 at 2022-03-07 23:18:42 +0530
+I, [2022-03-07T23:18:42.657469 #9809]  INFO -- : [271b8844-dd87-4b9f-9e9d-3de8140598ad] Processing by DashboardsController#show as HTML
+I, [2022-03-07T23:18:42.664225 #9809]  INFO -- : [271b8844-dd87-4b9f-9e9d-3de8140598ad]   Rendered subjects/index.html.erb within layouts/admin (Duration: 3.4ms | Allocations: 554)
+I, [2022-03-07T23:18:42.665112 #9809]  INFO -- : [271b8844-dd87-4b9f-9e9d-3de8140598ad]   Rendered layout layouts/admin.html.erb (Duration: 4.3ms | Allocations: 991)
+I, [2022-03-07T23:18:42.665452 #9809]  INFO -- : [271b8844-dd87-4b9f-9e9d-3de8140598ad] Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.6ms | Allocations: 2007)
+I, [2022-03-07T23:18:50.317867 #9809]  INFO -- : [d50bd63e-7d62-423a-9332-6cb3d9235551] Started GET "/admins/sign_out" for 127.0.0.1 at 2022-03-07 23:18:50 +0530
+I, [2022-03-07T23:18:50.329409 #9809]  INFO -- : [d50bd63e-7d62-423a-9332-6cb3d9235551] Processing by Admins::SessionsController#destroy as HTML
+I, [2022-03-07T23:18:50.332991 #9809]  INFO -- : [d50bd63e-7d62-423a-9332-6cb3d9235551] Redirected to http://localhost:5000/admins/sign_in
+I, [2022-03-07T23:18:50.333229 #9809]  INFO -- : [d50bd63e-7d62-423a-9332-6cb3d9235551] Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 938)
+I, [2022-03-07T23:18:50.339839 #9809]  INFO -- : [956a1584-3b85-49d4-93ee-94e4e91a8b3c] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 23:18:50 +0530
+I, [2022-03-07T23:18:50.348689 #9809]  INFO -- : [956a1584-3b85-49d4-93ee-94e4e91a8b3c] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T23:18:50.352486 #9809]  INFO -- : [956a1584-3b85-49d4-93ee-94e4e91a8b3c]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 812)
+I, [2022-03-07T23:18:50.353314 #9809]  INFO -- : [956a1584-3b85-49d4-93ee-94e4e91a8b3c]   Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1198)
+I, [2022-03-07T23:18:50.353658 #9809]  INFO -- : [956a1584-3b85-49d4-93ee-94e4e91a8b3c] Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2043)
+I, [2022-03-07T23:18:55.924559 #9809]  INFO -- : [89ecba86-f78c-4569-9013-57045a0bff6a] Started POST "/sign_in_with_credentials" for 127.0.0.1 at 2022-03-07 23:18:55 +0530
+I, [2022-03-07T23:18:55.930186 #9809]  INFO -- : [89ecba86-f78c-4569-9013-57045a0bff6a] Processing by Admins::SessionsController#sign_in_with_credentials as HTML
+I, [2022-03-07T23:18:55.930512 #9809]  INFO -- : [89ecba86-f78c-4569-9013-57045a0bff6a]   Parameters: {"login"=>"student@gmail.com", "password"=>"[FILTERED]"}
+I, [2022-03-07T23:18:56.326602 #9809]  INFO -- : [89ecba86-f78c-4569-9013-57045a0bff6a] Redirected to http://localhost:5000/
+I, [2022-03-07T23:18:56.326936 #9809]  INFO -- : [89ecba86-f78c-4569-9013-57045a0bff6a] Completed 302 Found in 396ms (ActiveRecord: 0.6ms | Allocations: 855)
+I, [2022-03-07T23:18:56.334098 #9809]  INFO -- : [0dcb6c8d-389e-4bd2-8ec7-407fe1f21789] Started GET "/" for 127.0.0.1 at 2022-03-07 23:18:56 +0530
+I, [2022-03-07T23:18:56.338027 #9809]  INFO -- : [0dcb6c8d-389e-4bd2-8ec7-407fe1f21789] Processing by DashboardsController#show as HTML
+I, [2022-03-07T23:18:56.342398 #9809]  INFO -- : [0dcb6c8d-389e-4bd2-8ec7-407fe1f21789]   Rendered dashboards/show.html.erb within layouts/dashboaard (Duration: 1.1ms | Allocations: 127)
+I, [2022-03-07T23:18:56.348067 #9809]  INFO -- : [0dcb6c8d-389e-4bd2-8ec7-407fe1f21789]   Rendered layout layouts/dashboaard.html.erb (Duration: 6.9ms | Allocations: 759)
+I, [2022-03-07T23:18:56.348858 #9809]  INFO -- : [0dcb6c8d-389e-4bd2-8ec7-407fe1f21789] Completed 200 OK in 11ms (Views: 6.6ms | ActiveRecord: 1.8ms | Allocations: 1304)
+I, [2022-03-07T23:19:02.604400 #9809]  INFO -- : [b0268f00-c2e8-4421-8bff-124d391514d8] Started GET "/questions?id=2" for 127.0.0.1 at 2022-03-07 23:19:02 +0530
+I, [2022-03-07T23:19:02.614211 #9809]  INFO -- : [b0268f00-c2e8-4421-8bff-124d391514d8] Processing by QuestionsController#index as HTML
+I, [2022-03-07T23:19:02.614346 #9809]  INFO -- : [b0268f00-c2e8-4421-8bff-124d391514d8]   Parameters: {"id"=>"2"}
+I, [2022-03-07T23:19:02.617413 #9809]  INFO -- : [b0268f00-c2e8-4421-8bff-124d391514d8] Redirected to http://localhost:5000/select_quiz_type?id=2
+I, [2022-03-07T23:19:02.617692 #9809]  INFO -- : [b0268f00-c2e8-4421-8bff-124d391514d8] Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 713)
+I, [2022-03-07T23:19:02.623738 #9809]  INFO -- : [12a7d351-f1f1-4c6b-a61c-80941551f642] Started GET "/select_quiz_type?id=2" for 127.0.0.1 at 2022-03-07 23:19:02 +0530
+I, [2022-03-07T23:19:02.630141 #9809]  INFO -- : [12a7d351-f1f1-4c6b-a61c-80941551f642] Processing by QuestionsController#select_quiz_type as HTML
+I, [2022-03-07T23:19:02.630406 #9809]  INFO -- : [12a7d351-f1f1-4c6b-a61c-80941551f642]   Parameters: {"id"=>"2"}
+I, [2022-03-07T23:19:02.634701 #9809]  INFO -- : [12a7d351-f1f1-4c6b-a61c-80941551f642]   Rendered questions/select_quiz_type.html.erb within layouts/dashboaard (Duration: 0.7ms | Allocations: 332)
+I, [2022-03-07T23:19:02.637125 #9809]  INFO -- : [12a7d351-f1f1-4c6b-a61c-80941551f642]   Rendered layout layouts/dashboaard.html.erb (Duration: 3.1ms | Allocations: 1096)
+I, [2022-03-07T23:19:02.637502 #9809]  INFO -- : [12a7d351-f1f1-4c6b-a61c-80941551f642] Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.9ms | Allocations: 1841)
+I, [2022-03-07T23:19:04.685120 #9809]  INFO -- : [dd57b76d-cc9b-496d-b46a-dd9455b1448a] Started GET "/quiz_questions?id=2&type=time" for 127.0.0.1 at 2022-03-07 23:19:04 +0530
+I, [2022-03-07T23:19:04.694646 #9809]  INFO -- : [dd57b76d-cc9b-496d-b46a-dd9455b1448a] Processing by QuestionsController#quiz_questions as HTML
+I, [2022-03-07T23:19:04.694767 #9809]  INFO -- : [dd57b76d-cc9b-496d-b46a-dd9455b1448a]   Parameters: {"id"=>"2", "type"=>"time"}
+I, [2022-03-07T23:19:04.731252 #9809]  INFO -- : [dd57b76d-cc9b-496d-b46a-dd9455b1448a]   Rendered questions/quiz_questions.html.erb within layouts/dashboaard (Duration: 13.0ms | Allocations: 3560)
+I, [2022-03-07T23:19:04.733933 #9809]  INFO -- : [dd57b76d-cc9b-496d-b46a-dd9455b1448a]   Rendered layout layouts/dashboaard.html.erb (Duration: 15.7ms | Allocations: 4144)
+I, [2022-03-07T23:19:04.734652 #9809]  INFO -- : [dd57b76d-cc9b-496d-b46a-dd9455b1448a] Completed 200 OK in 40ms (Views: 16.2ms | ActiveRecord: 2.9ms | Allocations: 6005)
+I, [2022-03-07T23:19:04.777895 #9809]  INFO -- : [f77f6210-e0da-4906-b8f3-7895f30a7711] Started GET "/assets/icons/ticker-64aa172e59a3abbe3a4628f0a0465626daacdacce069a8ef28e7a82312841b5a.png" for 127.0.0.1 at 2022-03-07 23:19:04 +0530
+I, [2022-03-07T23:19:12.107179 #9809]  INFO -- : [c7338c00-cfb8-4608-b339-a77729f16548] Started GET "/questions?id=1" for 127.0.0.1 at 2022-03-07 23:19:12 +0530
+I, [2022-03-07T23:19:12.111855 #9809]  INFO -- : [c7338c00-cfb8-4608-b339-a77729f16548] Processing by QuestionsController#index as HTML
+I, [2022-03-07T23:19:12.112476 #9809]  INFO -- : [c7338c00-cfb8-4608-b339-a77729f16548]   Parameters: {"id"=>"1"}
+I, [2022-03-07T23:19:12.116089 #9809]  INFO -- : [c7338c00-cfb8-4608-b339-a77729f16548] Redirected to http://localhost:5000/select_quiz_type?id=1
+I, [2022-03-07T23:19:12.116582 #9809]  INFO -- : [c7338c00-cfb8-4608-b339-a77729f16548] Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 444)
+I, [2022-03-07T23:19:12.124519 #9809]  INFO -- : [282e40a4-3437-4a5b-84cc-2f29e6322a73] Started GET "/select_quiz_type?id=1" for 127.0.0.1 at 2022-03-07 23:19:12 +0530
+I, [2022-03-07T23:19:12.132179 #9809]  INFO -- : [282e40a4-3437-4a5b-84cc-2f29e6322a73] Processing by QuestionsController#select_quiz_type as HTML
+I, [2022-03-07T23:19:12.132283 #9809]  INFO -- : [282e40a4-3437-4a5b-84cc-2f29e6322a73]   Parameters: {"id"=>"1"}
+I, [2022-03-07T23:19:12.135503 #9809]  INFO -- : [282e40a4-3437-4a5b-84cc-2f29e6322a73]   Rendered questions/select_quiz_type.html.erb within layouts/dashboaard (Duration: 0.6ms | Allocations: 225)
+I, [2022-03-07T23:19:12.137402 #9809]  INFO -- : [282e40a4-3437-4a5b-84cc-2f29e6322a73]   Rendered layout layouts/dashboaard.html.erb (Duration: 2.5ms | Allocations: 821)
+I, [2022-03-07T23:19:12.137747 #9809]  INFO -- : [282e40a4-3437-4a5b-84cc-2f29e6322a73] Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 1330)
+I, [2022-03-07T23:19:14.757830 #9809]  INFO -- : [a4582d70-f5cd-4a56-8661-73d77912d0a3] Started GET "/quiz_questions?id=1&type=time" for 127.0.0.1 at 2022-03-07 23:19:14 +0530
+I, [2022-03-07T23:19:14.766096 #9809]  INFO -- : [a4582d70-f5cd-4a56-8661-73d77912d0a3] Processing by QuestionsController#quiz_questions as HTML
+I, [2022-03-07T23:19:14.766246 #9809]  INFO -- : [a4582d70-f5cd-4a56-8661-73d77912d0a3]   Parameters: {"id"=>"1", "type"=>"time"}
+I, [2022-03-07T23:19:14.785511 #9809]  INFO -- : [a4582d70-f5cd-4a56-8661-73d77912d0a3]   Rendered questions/quiz_questions.html.erb within layouts/dashboaard (Duration: 11.0ms | Allocations: 1864)
+I, [2022-03-07T23:19:14.787381 #9809]  INFO -- : [a4582d70-f5cd-4a56-8661-73d77912d0a3]   Rendered layout layouts/dashboaard.html.erb (Duration: 13.0ms | Allocations: 2447)
+I, [2022-03-07T23:19:14.787742 #9809]  INFO -- : [a4582d70-f5cd-4a56-8661-73d77912d0a3] Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 3.3ms | Allocations: 3361)
+I, [2022-03-07T23:19:20.219123 #9809]  INFO -- : [89169c9f-af15-444d-bdd0-8fb8a6ef3998] Started GET "/quiz_questions?id=1&type=time" for 127.0.0.1 at 2022-03-07 23:19:20 +0530
+I, [2022-03-07T23:19:20.228035 #9809]  INFO -- : [89169c9f-af15-444d-bdd0-8fb8a6ef3998] Processing by QuestionsController#quiz_questions as HTML
+I, [2022-03-07T23:19:20.228173 #9809]  INFO -- : [89169c9f-af15-444d-bdd0-8fb8a6ef3998]   Parameters: {"id"=>"1", "type"=>"time"}
+I, [2022-03-07T23:19:20.244727 #9809]  INFO -- : [89169c9f-af15-444d-bdd0-8fb8a6ef3998]   Rendered questions/quiz_questions.html.erb within layouts/dashboaard (Duration: 9.4ms | Allocations: 1864)
+I, [2022-03-07T23:19:20.248988 #9809]  INFO -- : [89169c9f-af15-444d-bdd0-8fb8a6ef3998]   Rendered layout layouts/dashboaard.html.erb (Duration: 13.7ms | Allocations: 2447)
+I, [2022-03-07T23:19:20.249739 #9809]  INFO -- : [89169c9f-af15-444d-bdd0-8fb8a6ef3998] Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 2.6ms | Allocations: 3361)
+I, [2022-03-07T23:19:22.178374 #9809]  INFO -- : [76782d33-0d96-49df-8733-31715bbed36e] Started GET "/questions?id=2" for 127.0.0.1 at 2022-03-07 23:19:22 +0530
+I, [2022-03-07T23:19:22.183762 #9809]  INFO -- : [76782d33-0d96-49df-8733-31715bbed36e] Processing by QuestionsController#index as HTML
+I, [2022-03-07T23:19:22.183883 #9809]  INFO -- : [76782d33-0d96-49df-8733-31715bbed36e]   Parameters: {"id"=>"2"}
+I, [2022-03-07T23:19:22.186972 #9809]  INFO -- : [76782d33-0d96-49df-8733-31715bbed36e] Redirected to http://localhost:5000/select_quiz_type?id=2
+I, [2022-03-07T23:19:22.187238 #9809]  INFO -- : [76782d33-0d96-49df-8733-31715bbed36e] Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 440)
+I, [2022-03-07T23:19:22.193417 #9809]  INFO -- : [4746791e-0009-4398-bab7-fa602b620187] Started GET "/select_quiz_type?id=2" for 127.0.0.1 at 2022-03-07 23:19:22 +0530
+I, [2022-03-07T23:19:22.197963 #9809]  INFO -- : [4746791e-0009-4398-bab7-fa602b620187] Processing by QuestionsController#select_quiz_type as HTML
+I, [2022-03-07T23:19:22.198157 #9809]  INFO -- : [4746791e-0009-4398-bab7-fa602b620187]   Parameters: {"id"=>"2"}
+I, [2022-03-07T23:19:22.203363 #9809]  INFO -- : [4746791e-0009-4398-bab7-fa602b620187]   Rendered questions/select_quiz_type.html.erb within layouts/dashboaard (Duration: 0.9ms | Allocations: 225)
+I, [2022-03-07T23:19:22.206437 #9809]  INFO -- : [4746791e-0009-4398-bab7-fa602b620187]   Rendered layout layouts/dashboaard.html.erb (Duration: 4.0ms | Allocations: 821)
+I, [2022-03-07T23:19:22.206788 #9809]  INFO -- : [4746791e-0009-4398-bab7-fa602b620187] Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.8ms | Allocations: 1330)
+I, [2022-03-07T23:19:24.181909 #9809]  INFO -- : [ddedfa92-f2a4-43d3-ac9f-75a7dc67e7ef] Started GET "/quiz_questions?id=2&type=time" for 127.0.0.1 at 2022-03-07 23:19:24 +0530
+I, [2022-03-07T23:19:24.189930 #9809]  INFO -- : [ddedfa92-f2a4-43d3-ac9f-75a7dc67e7ef] Processing by QuestionsController#quiz_questions as HTML
+I, [2022-03-07T23:19:24.190107 #9809]  INFO -- : [ddedfa92-f2a4-43d3-ac9f-75a7dc67e7ef]   Parameters: {"id"=>"2", "type"=>"time"}
+I, [2022-03-07T23:19:24.204838 #9809]  INFO -- : [ddedfa92-f2a4-43d3-ac9f-75a7dc67e7ef]   Rendered questions/quiz_questions.html.erb within layouts/dashboaard (Duration: 7.6ms | Allocations: 1871)
+I, [2022-03-07T23:19:24.207710 #9809]  INFO -- : [ddedfa92-f2a4-43d3-ac9f-75a7dc67e7ef]   Rendered layout layouts/dashboaard.html.erb (Duration: 10.7ms | Allocations: 2454)
+I, [2022-03-07T23:19:24.208238 #9809]  INFO -- : [ddedfa92-f2a4-43d3-ac9f-75a7dc67e7ef] Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 2.8ms | Allocations: 3366)

@@ -15,7 +15,12 @@
     <%= form.label :name %>
     <%= form.text_field :name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
-<div class="my-5">
+  <div class="my-5">
+    <%= form.label :duration %>
+    <%= form.number_field :duration, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <div style="color:red;font-size:15px">**if time quiz**</div>
+  </div>
+  <div class="my-5">
     <%= form.label :upload_file %>
     <%= form.file_field :upload_file,id: "question-file", class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
