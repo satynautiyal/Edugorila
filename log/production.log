@@ -453,3 +453,127 @@ I, [2022-03-04T01:42:23.825014 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce
 I, [2022-03-04T01:42:23.831074 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388]   Rendered dashboards/show.html.erb within layouts/dashboaard (Duration: 0.4ms | Allocations: 118)
 I, [2022-03-04T01:42:23.874169 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388]   Rendered layout layouts/dashboaard.html.erb (Duration: 43.6ms | Allocations: 12502)
 I, [2022-03-04T01:42:23.874635 #32012]  INFO -- : [ac6eec8b-a9cd-4460-821d-364ce4caa388] Completed 200 OK in 49ms (Views: 41.8ms | ActiveRecord: 4.6ms | Allocations: 13869)
+I, [2022-03-06T22:59:21.816705 #126716]  INFO -- : [f5b0d58d-ca9c-46a4-9640-67ded6a62868] Started GET "/" for 127.0.0.1 at 2022-03-06 22:59:21 +0530
+I, [2022-03-06T22:59:21.848745 #126716]  INFO -- : [f5b0d58d-ca9c-46a4-9640-67ded6a62868] Processing by DashboardsController#show as HTML
+I, [2022-03-06T22:59:21.849454 #126716]  INFO -- : [f5b0d58d-ca9c-46a4-9640-67ded6a62868] Completed 401 Unauthorized in 1ms (Allocations: 244)
+I, [2022-03-06T22:59:21.873347 #126716]  INFO -- : [609b6ca2-dcda-4a66-9460-c892b6f050b5] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-06 22:59:21 +0530
+I, [2022-03-06T22:59:21.881598 #126716]  INFO -- : [609b6ca2-dcda-4a66-9460-c892b6f050b5] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-06T22:59:22.642074 #126716]  INFO -- : [609b6ca2-dcda-4a66-9460-c892b6f050b5]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1445)
+I, [2022-03-06T22:59:22.643599 #126716]  INFO -- : [609b6ca2-dcda-4a66-9460-c892b6f050b5]   Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2103)
+I, [2022-03-06T22:59:22.644224 #126716]  INFO -- : [609b6ca2-dcda-4a66-9460-c892b6f050b5] Completed 200 OK in 762ms (Views: 22.9ms | ActiveRecord: 680.6ms | Allocations: 13983)
+I, [2022-03-06T22:59:22.684540 #126716]  INFO -- : [0c337b5f-2a8a-4afa-8a06-02d3936f2ffe] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-06 22:59:22 +0530
+I, [2022-03-06T22:59:22.694947 #126716]  INFO -- : [9390eac4-fa58-4581-b48a-50addbbfb593] Started GET "/assets/inter-font-8c3e82affb176f4bca9616b838d906343d1251adc8408efe02cf2b1e4fcf2bc4.css" for 127.0.0.1 at 2022-03-06 22:59:22 +0530
+I, [2022-03-06T22:59:22.699759 #126716]  INFO -- : [892e19ad-8cb1-4543-b374-1b2a33ba918f] Started GET "/assets/application-a4375311ee992e8080e06c9388b14b73cab4c22f400505f345c34b53ed5e7fd2.css" for 127.0.0.1 at 2022-03-06 22:59:22 +0530
+F, [2022-03-06T22:59:22.752556 #126716] FATAL -- : [0c337b5f-2a8a-4afa-8a06-02d3936f2ffe]   
+[0c337b5f-2a8a-4afa-8a06-02d3936f2ffe] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[0c337b5f-2a8a-4afa-8a06-02d3936f2ffe]   
+I, [2022-03-06T22:59:23.809435 #126716]  INFO -- : [856ee576-56b4-4efa-b664-0a822487e1b3] Started GET "/favicon.ico" for 127.0.0.1 at 2022-03-06 22:59:23 +0530
+F, [2022-03-06T22:59:23.818507 #126716] FATAL -- : [856ee576-56b4-4efa-b664-0a822487e1b3]   
+[856ee576-56b4-4efa-b664-0a822487e1b3] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[856ee576-56b4-4efa-b664-0a822487e1b3]   
+I, [2022-03-06T23:00:39.475852 #126860]  INFO -- : [dacb866b-00d6-4cea-8db3-81e0f93859b8] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-06 23:00:39 +0530
+I, [2022-03-06T23:00:39.495561 #126860]  INFO -- : [dacb866b-00d6-4cea-8db3-81e0f93859b8] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-06T23:00:39.567560 #126860]  INFO -- : [dacb866b-00d6-4cea-8db3-81e0f93859b8]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1479)
+I, [2022-03-06T23:00:39.571069 #126860]  INFO -- : [dacb866b-00d6-4cea-8db3-81e0f93859b8]   Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2146)
+I, [2022-03-06T23:00:39.571661 #126860]  INFO -- : [dacb866b-00d6-4cea-8db3-81e0f93859b8] Completed 200 OK in 76ms (Views: 15.1ms | ActiveRecord: 23.7ms | Allocations: 13202)
+I, [2022-03-06T23:00:39.612065 #126860]  INFO -- : [2c9aaa92-cc05-4d08-a3ba-46ca01668618] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-06 23:00:39 +0530
+F, [2022-03-06T23:00:39.621330 #126860] FATAL -- : [2c9aaa92-cc05-4d08-a3ba-46ca01668618]   
+[2c9aaa92-cc05-4d08-a3ba-46ca01668618] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[2c9aaa92-cc05-4d08-a3ba-46ca01668618]   
+I, [2022-03-06T23:00:40.694508 #126860]  INFO -- : [7a38eaae-5315-4219-93d5-b5db02f88bf5] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-06 23:00:40 +0530
+I, [2022-03-06T23:00:40.702399 #126860]  INFO -- : [7a38eaae-5315-4219-93d5-b5db02f88bf5] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-06T23:00:40.707878 #126860]  INFO -- : [7a38eaae-5315-4219-93d5-b5db02f88bf5]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 725)
+I, [2022-03-06T23:00:40.709371 #126860]  INFO -- : [7a38eaae-5315-4219-93d5-b5db02f88bf5]   Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1042)
+I, [2022-03-06T23:00:40.709934 #126860]  INFO -- : [7a38eaae-5315-4219-93d5-b5db02f88bf5] Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 1629)
+I, [2022-03-06T23:00:40.751138 #126860]  INFO -- : [754647e8-2764-43cd-85a6-50a02833ad39] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-06 23:00:40 +0530
+F, [2022-03-06T23:00:40.760288 #126860] FATAL -- : [754647e8-2764-43cd-85a6-50a02833ad39]   
+[754647e8-2764-43cd-85a6-50a02833ad39] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[754647e8-2764-43cd-85a6-50a02833ad39]   
+I, [2022-03-06T23:00:59.255055 #126922]  INFO -- : [3210eefa-f108-4dae-b00e-5779fd0c8043] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-06 23:00:59 +0530
+I, [2022-03-06T23:00:59.277012 #126922]  INFO -- : [3210eefa-f108-4dae-b00e-5779fd0c8043] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-06T23:00:59.351567 #126922]  INFO -- : [3210eefa-f108-4dae-b00e-5779fd0c8043]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1479)
+I, [2022-03-06T23:00:59.354576 #126922]  INFO -- : [3210eefa-f108-4dae-b00e-5779fd0c8043]   Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2146)
+I, [2022-03-06T23:00:59.355210 #126922]  INFO -- : [3210eefa-f108-4dae-b00e-5779fd0c8043] Completed 200 OK in 78ms (Views: 15.2ms | ActiveRecord: 21.0ms | Allocations: 13202)
+I, [2022-03-06T23:00:59.390116 #126922]  INFO -- : [b6bc010c-c6db-40d4-9276-2641bd6babef] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-06 23:00:59 +0530
+F, [2022-03-06T23:00:59.410330 #126922] FATAL -- : [b6bc010c-c6db-40d4-9276-2641bd6babef]   
+[b6bc010c-c6db-40d4-9276-2641bd6babef] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[b6bc010c-c6db-40d4-9276-2641bd6babef]   
+I, [2022-03-06T23:06:38.498137 #131129]  INFO -- : [0b9a8909-122e-42fb-a001-24f49d26ba45] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-06 23:06:38 +0530
+I, [2022-03-06T23:06:38.514373 #131129]  INFO -- : [0b9a8909-122e-42fb-a001-24f49d26ba45] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-06T23:06:38.578013 #131129]  INFO -- : [0b9a8909-122e-42fb-a001-24f49d26ba45]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1479)
+I, [2022-03-06T23:06:38.580895 #131129]  INFO -- : [0b9a8909-122e-42fb-a001-24f49d26ba45]   Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2146)
+I, [2022-03-06T23:06:38.581460 #131129]  INFO -- : [0b9a8909-122e-42fb-a001-24f49d26ba45] Completed 200 OK in 67ms (Views: 15.0ms | ActiveRecord: 21.3ms | Allocations: 13202)
+I, [2022-03-06T23:06:38.615417 #131129]  INFO -- : [c336632d-7c09-4832-af71-4cbe662e437e] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-06 23:06:38 +0530
+F, [2022-03-06T23:06:38.638962 #131129] FATAL -- : [c336632d-7c09-4832-af71-4cbe662e437e]   
+[c336632d-7c09-4832-af71-4cbe662e437e] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[c336632d-7c09-4832-af71-4cbe662e437e]   
+I, [2022-03-06T23:06:40.312676 #131129]  INFO -- : [0563ec16-fc4d-4d33-b9f6-5350e51a0157] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-06 23:06:40 +0530
+I, [2022-03-06T23:06:40.317950 #131129]  INFO -- : [0563ec16-fc4d-4d33-b9f6-5350e51a0157] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-06T23:06:40.322275 #131129]  INFO -- : [0563ec16-fc4d-4d33-b9f6-5350e51a0157]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 725)
+I, [2022-03-06T23:06:40.323303 #131129]  INFO -- : [0563ec16-fc4d-4d33-b9f6-5350e51a0157]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1042)
+I, [2022-03-06T23:06:40.323928 #131129]  INFO -- : [0563ec16-fc4d-4d33-b9f6-5350e51a0157] Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1629)
+I, [2022-03-06T23:06:40.366753 #131129]  INFO -- : [d1b7a119-ccb4-400b-935e-d282c00772b0] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-06 23:06:40 +0530
+F, [2022-03-06T23:06:40.373353 #131129] FATAL -- : [d1b7a119-ccb4-400b-935e-d282c00772b0]   
+[d1b7a119-ccb4-400b-935e-d282c00772b0] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[d1b7a119-ccb4-400b-935e-d282c00772b0]   
+I, [2022-03-07T22:28:49.938941 #5247]  INFO -- : [0573c19d-3851-45a1-8093-4fb9488bd3b6] Started GET "/" for 127.0.0.1 at 2022-03-07 22:28:49 +0530
+I, [2022-03-07T22:28:50.130334 #5247]  INFO -- : [0573c19d-3851-45a1-8093-4fb9488bd3b6] Processing by DashboardsController#show as HTML
+I, [2022-03-07T22:28:50.130975 #5247]  INFO -- : [0573c19d-3851-45a1-8093-4fb9488bd3b6] Completed 401 Unauthorized in 0ms (Allocations: 244)
+I, [2022-03-07T22:28:51.406595 #5247]  INFO -- : [545f40c0-6aea-4f42-8c1e-a8ec8fccf8e9] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 22:28:51 +0530
+I, [2022-03-07T22:28:51.410974 #5247]  INFO -- : [545f40c0-6aea-4f42-8c1e-a8ec8fccf8e9] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T22:28:58.572169 #5247]  INFO -- : [545f40c0-6aea-4f42-8c1e-a8ec8fccf8e9]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1446)
+I, [2022-03-07T22:28:58.573689 #5247]  INFO -- : [545f40c0-6aea-4f42-8c1e-a8ec8fccf8e9]   Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2105)
+I, [2022-03-07T22:28:58.574088 #5247]  INFO -- : [545f40c0-6aea-4f42-8c1e-a8ec8fccf8e9] Completed 200 OK in 7163ms (Views: 56.4ms | ActiveRecord: 6724.2ms | Allocations: 13070)
+I, [2022-03-07T22:28:59.111395 #5247]  INFO -- : [50541bbe-7c80-4ecb-a08d-fcef7b0eabc4] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-07 22:28:59 +0530
+I, [2022-03-07T22:28:59.116901 #5247]  INFO -- : [46a1ad28-9773-40fe-a8e0-0ffbb4d652d9] Started GET "/assets/application-a4375311ee992e8080e06c9388b14b73cab4c22f400505f345c34b53ed5e7fd2.css" for 127.0.0.1 at 2022-03-07 22:28:59 +0530
+I, [2022-03-07T22:28:59.123232 #5247]  INFO -- : [9bb7cda6-9371-43e4-9b50-6dcc684dbc40] Started GET "/assets/inter-font-8c3e82affb176f4bca9616b838d906343d1251adc8408efe02cf2b1e4fcf2bc4.css" for 127.0.0.1 at 2022-03-07 22:28:59 +0530
+F, [2022-03-07T22:28:59.420822 #5247] FATAL -- : [50541bbe-7c80-4ecb-a08d-fcef7b0eabc4]   
+[50541bbe-7c80-4ecb-a08d-fcef7b0eabc4] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[50541bbe-7c80-4ecb-a08d-fcef7b0eabc4]   
+I, [2022-03-07T22:29:03.568564 #5247]  INFO -- : [9bf5da1f-d954-4f2c-ba99-ed97218ca958] Started GET "/favicon.ico" for 127.0.0.1 at 2022-03-07 22:29:03 +0530
+F, [2022-03-07T22:29:03.572735 #5247] FATAL -- : [9bf5da1f-d954-4f2c-ba99-ed97218ca958]   
+[9bf5da1f-d954-4f2c-ba99-ed97218ca958] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[9bf5da1f-d954-4f2c-ba99-ed97218ca958]   
+I, [2022-03-07T22:31:54.950658 #6234]  INFO -- : [2e7b4525-4c0f-4436-b57a-c680cb1be6fa] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-07 22:31:54 +0530
+F, [2022-03-07T22:31:54.972147 #6234] FATAL -- : [2e7b4525-4c0f-4436-b57a-c680cb1be6fa]   
+[2e7b4525-4c0f-4436-b57a-c680cb1be6fa] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[2e7b4525-4c0f-4436-b57a-c680cb1be6fa]   
+I, [2022-03-07T22:31:56.900903 #6234]  INFO -- : [a444edad-a43c-4207-8f84-81d5e554d6eb] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 22:31:56 +0530
+I, [2022-03-07T22:31:56.910909 #6234]  INFO -- : [a444edad-a43c-4207-8f84-81d5e554d6eb] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T22:31:56.960219 #6234]  INFO -- : [a444edad-a43c-4207-8f84-81d5e554d6eb]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1393)
+I, [2022-03-07T22:31:56.961727 #6234]  INFO -- : [a444edad-a43c-4207-8f84-81d5e554d6eb]   Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2040)
+I, [2022-03-07T22:31:56.962208 #6234]  INFO -- : [a444edad-a43c-4207-8f84-81d5e554d6eb] Completed 200 OK in 51ms (Views: 12.4ms | ActiveRecord: 13.6ms | Allocations: 12877)
+I, [2022-03-07T22:31:56.986373 #6234]  INFO -- : [a58c7ce3-e801-48a9-865c-43f656de3e09] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-07 22:31:56 +0530
+F, [2022-03-07T22:31:56.994760 #6234] FATAL -- : [a58c7ce3-e801-48a9-865c-43f656de3e09]   
+[a58c7ce3-e801-48a9-865c-43f656de3e09] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[a58c7ce3-e801-48a9-865c-43f656de3e09]   
+I, [2022-03-07T22:31:57.837848 #6234]  INFO -- : [3bd6f214-6d84-431a-ae5a-5acdf0c4ff66] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 22:31:57 +0530
+I, [2022-03-07T22:31:57.849062 #6234]  INFO -- : [3bd6f214-6d84-431a-ae5a-5acdf0c4ff66] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T22:31:57.853974 #6234]  INFO -- : [3bd6f214-6d84-431a-ae5a-5acdf0c4ff66]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 696)
+I, [2022-03-07T22:31:57.855278 #6234]  INFO -- : [3bd6f214-6d84-431a-ae5a-5acdf0c4ff66]   Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 997)
+I, [2022-03-07T22:31:57.855750 #6234]  INFO -- : [3bd6f214-6d84-431a-ae5a-5acdf0c4ff66] Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 1563)
+I, [2022-03-07T22:31:57.879126 #6234]  INFO -- : [c2eca4c0-24e3-44f9-8e8c-b176ef6bf51b] Started GET "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css" for 127.0.0.1 at 2022-03-07 22:31:57 +0530
+F, [2022-03-07T22:31:57.891938 #6234] FATAL -- : [c2eca4c0-24e3-44f9-8e8c-b176ef6bf51b]   
+[c2eca4c0-24e3-44f9-8e8c-b176ef6bf51b] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-8861bff74c13395907d7ce9857d6d40b19ac6e0fe65c191da993b92b102f21c1.css"):
+[c2eca4c0-24e3-44f9-8e8c-b176ef6bf51b]   
+I, [2022-03-07T22:34:58.287631 #6558]  INFO -- : [318ce53c-a202-4e69-887c-13f42b2af122] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 22:34:58 +0530
+I, [2022-03-07T22:34:58.307529 #6558]  INFO -- : [318ce53c-a202-4e69-887c-13f42b2af122] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T22:34:58.466179 #6558]  INFO -- : [318ce53c-a202-4e69-887c-13f42b2af122]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 40.9ms | Allocations: 1479)
+I, [2022-03-07T22:34:58.491550 #6558]  INFO -- : [318ce53c-a202-4e69-887c-13f42b2af122]   Rendered layout layouts/application.html.erb (Duration: 77.1ms | Allocations: 2146)
+I, [2022-03-07T22:34:58.492275 #6558]  INFO -- : [318ce53c-a202-4e69-887c-13f42b2af122] Completed 200 OK in 184ms (Views: 127.0ms | ActiveRecord: 18.6ms | Allocations: 13200)
+I, [2022-03-07T22:34:58.529657 #6558]  INFO -- : [fe2829c2-381f-4821-addc-0aaf13870a59] Started GET "/assets/tailwind-d66e965866bf90b88e53632b32807a5a7f0b4fefb040102635bef7cccd16cd31.css" for 127.0.0.1 at 2022-03-07 22:34:58 +0530
+I, [2022-03-07T22:43:53.139004 #7049]  INFO -- : [4640c0be-6252-4965-a981-b2de889d2024] Started GET "/" for 127.0.0.1 at 2022-03-07 22:43:53 +0530
+I, [2022-03-07T22:43:53.154401 #7049]  INFO -- : [4640c0be-6252-4965-a981-b2de889d2024] Processing by DashboardsController#show as HTML
+I, [2022-03-07T22:43:53.154997 #7049]  INFO -- : [4640c0be-6252-4965-a981-b2de889d2024] Completed 401 Unauthorized in 0ms (Allocations: 244)
+I, [2022-03-07T22:43:53.165335 #7049]  INFO -- : [ded7567e-f235-460a-be0c-eb74b3a14d0d] Started GET "/admins/sign_in" for 127.0.0.1 at 2022-03-07 22:43:53 +0530
+I, [2022-03-07T22:43:53.170652 #7049]  INFO -- : [ded7567e-f235-460a-be0c-eb74b3a14d0d] Processing by Admins::SessionsController#new as HTML
+I, [2022-03-07T22:43:53.317516 #7049]  INFO -- : [ded7567e-f235-460a-be0c-eb74b3a14d0d]   Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1446)
+I, [2022-03-07T22:43:53.318991 #7049]  INFO -- : [ded7567e-f235-460a-be0c-eb74b3a14d0d]   Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2105)
+I, [2022-03-07T22:43:53.319694 #7049]  INFO -- : [ded7567e-f235-460a-be0c-eb74b3a14d0d] Completed 200 OK in 149ms (Views: 11.8ms | ActiveRecord: 13.9ms | Allocations: 13054)
+I, [2022-03-07T22:43:53.352213 #7049]  INFO -- : [97900d6f-778d-4233-a90c-4406e6e54d50] Started GET "/assets/tailwind-d66e965866bf90b88e53632b32807a5a7f0b4fefb040102635bef7cccd16cd31.css" for 127.0.0.1 at 2022-03-07 22:43:53 +0530
+I, [2022-03-07T22:43:53.364580 #7049]  INFO -- : [80c2388a-7af1-43cc-91ac-c4e4da2b7cfe] Started GET "/assets/inter-font-8c3e82affb176f4bca9616b838d906343d1251adc8408efe02cf2b1e4fcf2bc4.css" for 127.0.0.1 at 2022-03-07 22:43:53 +0530
+I, [2022-03-07T22:43:53.368598 #7049]  INFO -- : [42d60a2f-d476-43e9-a7a6-bd2af9efc733] Started GET "/assets/application-a4375311ee992e8080e06c9388b14b73cab4c22f400505f345c34b53ed5e7fd2.css" for 127.0.0.1 at 2022-03-07 22:43:53 +0530
+I, [2022-03-07T22:43:54.790385 #7049]  INFO -- : [6def1871-8014-44b0-82f2-7d5421d28419] Started GET "/favicon.ico" for 127.0.0.1 at 2022-03-07 22:43:54 +0530
+F, [2022-03-07T22:43:54.798274 #7049] FATAL -- : [6def1871-8014-44b0-82f2-7d5421d28419]   
+[6def1871-8014-44b0-82f2-7d5421d28419] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+[6def1871-8014-44b0-82f2-7d5421d28419]   
